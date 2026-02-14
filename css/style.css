@@ -140,3 +140,31 @@ header{
 #logo-img{
     width: auto;
 }
+
+
+.s1{
+    position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;          
+  overflow: hidden;              
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(30px) saturate(100%);
+}
+.s1 *{
+    fill: none;
+}
+.s2{
+    /*stroke: chartreuse;*/
+}
+.s3{
+    /*stroke: aqua;*/
+    fill: #2F2F49;
+}
+.s4{
+    fill: #2F2F49;
+}
+.s5{
+    /*stroke: blue;*/
+    fill: blueviolet;
+}
