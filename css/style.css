@@ -1,5 +1,5 @@
 /*Google Fonts @import url*/
-
+/*__________________________________________________________________________________________*/
 /*:root variables*/
 :root{
     /*Colors*/
@@ -11,7 +11,7 @@
     --general-padding: 15px;
     --general-border-radius: 6px;
 }
-
+/*__________________________________________________________________________________________*/
 /*Basic layout style*/
 *{
     box-sizing: border-box;
@@ -22,7 +22,7 @@
 html{
     font-size: 62.5%;
 }
-
+/*__________________________________________________________________________________________*/
 /*Whole Background molten gold and silver*/
 html, body {
     height: 100%;
@@ -42,7 +42,7 @@ html, body {
         linear-gradient(145deg, #e8c670 0%, #d4af37 45%, #b8860b 55%, #c0c0c0 70%, #a8a8a8 100%),
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
 }
-
+/*__________________________________________________________________________________________*/
 /*SVG class bk_asian*/
 .bk_asian {
     width: 100vw;
@@ -53,8 +53,6 @@ html, body {
     object-fit: cover;
     background: transparent;
 }
-
-
 .bk_asian path {
     fill: rgba(233, 30, 99, 0);
     stroke: url(#stroke-gradient);
@@ -66,9 +64,7 @@ html, body {
     stroke-glow     6s ease-in-out infinite alternate,
     subtle-flow     12s linear infinite;
 }
-
 /* Gentle color fill → fade → refill */
-
 @keyframes fill-breath {
     0%    { fill: var(--color-base-red); }
     20%   { fill: var(--color-base-red); }
@@ -77,13 +73,6 @@ html, body {
     80%   { fill: var(--color-base-red); }
     100%  { fill: var(--color-base-red); }
 }
-
-
-
-
-
-
-
 /* Softer glow + slight brightness change */
 /*
 @keyframes stroke-glow {
@@ -96,35 +85,7 @@ html, body {
     0%   { stroke-dashoffset: 0;     stroke-dasharray: 8 24;  }
     100% { stroke-dashoffset: -160;  stroke-dasharray: 8 24;  }
 }
-
-/* Optional floating aura / particles */
-/*
-.bk_asian::before,
-.bk_asian::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background: radial-gradient(circle at 22% 28%, rgba(255,64,129,0.1) 0%, transparent 45%);
-    opacity: 0.7;
-    animation: particle-drift 28s linear infinite;
-    z-index: -1;
-    mix-blend-mode: screen;
-}
-
-.bk_asian::after {
-    background: radial-gradient(circle at 78% 72%, rgba(156,39,176,0.1) 0%, transparent 48%);
-    animation-delay: -14s;
-    animation-duration: 36s;
-}
-
-@keyframes particle-drift {
-    0%   { transform: translate(0,0)   scale(1);   opacity: 0.4; }
-    50%  { transform: translate(14px,-20px) scale(1.06); opacity: 0.85; }
-    100% { transform: translate(-10px,24px) scale(1);   opacity: 0.4; }
-}
-*/
-
+/*__________________________________________________________________________________________*/
 /*Layers Specifications*/
 body{
     z-index: 100;
@@ -139,3 +100,4 @@ body{
     display: flex;
     flex-direction: column;
 }
+/*__________________________________________________________________________________________*/
