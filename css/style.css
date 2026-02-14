@@ -94,7 +94,7 @@ html, body {
     fill: rgba(233, 30, 99, 0);
     /*stroke: rgb(233, 30, 99);*/
     stroke: url(#stroke-gradient);     /* reference the gradient by id */
-    stroke-width: 1.0;
+    stroke-width: 0.3;
     stroke-linecap: round;
     stroke-linejoin: round;
     animation:
