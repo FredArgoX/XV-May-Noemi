@@ -1,0 +1,164 @@
+/*Google Fonts @import url*/
+
+/*:root variables*/
+:root{
+    /*Colors*/
+    --color-base-red: #A02C2B;
+    --color-base-blue: #2F2F49;
+    /*Spacing*/
+    --genaral-gap: 15px;
+    --general-margin: 15px;
+    --general-padding: 15px;
+    --general-border-radius: 6px;
+}
+
+/*Basic layout style*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+html{
+    font-size: 62.5%;
+}
+/*
+body{
+    background-color: silver;
+    background-image: url('../assets/st_red.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    transition: background-color 2.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.bk_asian{
+    fill: #2F2F49;
+}
+*/
+
+
+/*Whole Background animation*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*
+    background: linear-gradient(
+        135deg,
+        #b8860b 0%,     
+        #ffd700 40%,    
+        #c0c0c0 60%,    
+        #a9a9a9 100%   
+    );
+    */
+    background: linear-gradient(
+        145deg,
+        #e8c670 0%,
+        #d4af37 45%,
+        #b8860b 55%,
+        #c0c0c0 70%,
+        #a8a8a8 100%
+    );
+    background-blend-mode: overlay;
+    background-image: 
+        linear-gradient(145deg, #e8c670 0%, #d4af37 45%, #b8860b 55%, #c0c0c0 70%, #a8a8a8 100%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+}
+
+.bk_asian {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    inset: 0;
+    object-fit: cover;
+    background: transparent;
+}
+
+/* your existing animations stay here */
+.bk_asian {
+    filter: drop-shadow(0 8px 24px rgba(0,0,0,0.3));
+    animation: overall-breathe 16s ease-in-out infinite;
+}
+
+@keyframes overall-breathe {
+    0%, 100% { transform: scale(1.00) translateY(0);    }
+    50%      { transform: scale(1.018) translateY(-7px); }
+}
+
+.bk_asian path {
+    fill: rgba(233, 30, 99, 0);
+    stroke: rgb(233, 30, 99);
+    stroke-width: 1.0;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation:
+    fill-breath     60s ease-in-out infinite,
+    stroke-glow     6s ease-in-out infinite alternate,
+    subtle-flow     12s linear infinite;
+}
+
+/* Gentle color fill → fade → refill */
+@keyframes fill-breath {
+    0%    { fill: var(--color-base-red); }
+    50%   { fill: var(--color-base-red); }
+    70%   { fill: rgba(233, 30, 99, 1.0); }
+    80%   { fill: var(--color-base-blue); }
+    100%  { fill: var(--color-base-red); }
+}
+
+/* Softer glow + slight brightness change */
+@keyframes stroke-glow {
+    0%   { filter: brightness(1)   drop-shadow(0 0 5px #ff408155);  }
+    100% { filter: brightness(1.35) drop-shadow(0 0 20px #ff4081cc); }
+}
+
+/* Very gentle dash movement – never fully disappears */
+@keyframes subtle-flow {
+    0%   { stroke-dashoffset: 0;     stroke-dasharray: 8 24;  }
+    100% { stroke-dashoffset: -160;  stroke-dasharray: 8 24;  }
+}
+
+/* Optional floating aura / particles */
+.bk_asian::before,
+.bk_asian::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at 22% 28%, rgba(255,64,129,0.90) 0%, transparent 45%);
+    opacity: 0.7;
+    animation: particle-drift 28s linear infinite;
+    z-index: -1;
+    mix-blend-mode: screen;
+}
+
+.bk_asian::after {
+    background: radial-gradient(circle at 78% 72%, rgba(156,39,176,0.9) 0%, transparent 48%);
+    animation-delay: -14s;
+    animation-duration: 36s;
+}
+
+@keyframes particle-drift {
+    0%   { transform: translate(0,0)   scale(1);   opacity: 0.4; }
+    50%  { transform: translate(14px,-20px) scale(1.06); opacity: 0.85; }
+    100% { transform: translate(-10px,24px) scale(1);   opacity: 0.4; }
+}
+
+/*Layers Specifications*/
+body{
+    z-index: 100;
+}
+header, main, footer{
+    z-index: 0;
+}
+html,
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}

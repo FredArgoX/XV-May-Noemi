@@ -1,0 +1,38 @@
+/* Root Variables */
+:root{
+    --color-a: #A02C2B;
+    --color-b: #2F2F49;
+}
+
+/* Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html,
+body{
+    min-height: 100vh;
+}
+
+/* Fullscreen SVG background */
+.bg-svg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* Layout structure */
+body{
+    display: flex;
+    flex-direction: column;
+}
