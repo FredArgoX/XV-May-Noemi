@@ -104,9 +104,10 @@ html, body {
 /* Gentle color fill → fade → refill */
 @keyframes fill-breath {
     0%    { fill: var(--color-base-red); }
-    50%   { fill: var(--color-base-red); }
-    70%   { fill: rgba(233, 30, 99, 1.0); }
-    80%   { fill: var(--color-base-blue); }
+    40%   { fill: var(--color-base-red); }
+    50%   { fill: rgba(233, 30, 99, 1.0); }
+    60%   { fill: var(--color-base-blue); }
+    90%   { fill: var(--color-base-blue); }
     100%  { fill: var(--color-base-red); }
 }
 
