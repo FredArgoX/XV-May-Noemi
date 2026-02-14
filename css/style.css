@@ -5,6 +5,8 @@
     /*Colors*/
     --color-base-red: #A02C2B;
     --color-base-blue: #2F2F49;
+    --color-base-white: #FFFFFF;
+    --color-base-black: #000000;
     /*Spacing*/
     --genaral-gap: 15px;
     --general-margin: 15px;
@@ -123,8 +125,10 @@ body{
 /*Header*/
 header{
     min-height: 100vh;
+    /*
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(1px) saturate(100%);
+    */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,34 +141,64 @@ header{
     align-items: center;
     justify-content: center;
 }
-#logo-img{
-    width: auto;
-}
-
-
-.s1{
+.sv01{
     position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;          
-  overflow: hidden;              
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(30px) saturate(100%);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px) saturate(100%);
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;       
 }
-.s1 *{
+.sv01 *{
     fill: none;
+    stroke: none;
 }
-.s2{
-    /*stroke: chartreuse;*/
+.sv03{
+    /* circle */
+    fill: var(--color-base-red);
 }
-.s3{
-    /*stroke: aqua;*/
-    fill: #2F2F49;
+.sv04{
+    /* m */
+    fill: var(--color-base-black);
 }
-.s4{
-    fill: #2F2F49;
+.sv05{
+    /* & */
+    fill: var(--color-base-black);
 }
-.s5{
-    /*stroke: blue;*/
-    fill: blueviolet;
+.sv06{
+    /* n */
+    fill: var(--color-base-black);
+}
+.sv07{
+    /* años */
+    /*fill: var(--color-base-white);*/
+    /*fill: url(#stroke-gradient);*/
+    fill: var(--color-base-black);
+    stroke: url(#stroke-gradient);
+    stroke-width: 1;
+    animation:
+    subtle-flow 9s linear infinite;
+}
+.sv08{
+    /* V */
+    /*fill: var(--color-base-white);*/
+    /*fill: url(#stroke-gradient);*/
+    fill: var(--color-base-black);
+    stroke: url(#stroke-gradient);
+    stroke-width: 1;
+    animation:
+    subtle-flow 9s linear infinite;
+}
+.sv09{
+    /* X */
+    /*fill: url(#stroke-gradient);*/
+    fill: var(--color-base-black);
+    stroke: url(#stroke-gradient);
+    stroke-width: 1;
+    animation:
+    subtle-flow 9s linear infinite;
 }
