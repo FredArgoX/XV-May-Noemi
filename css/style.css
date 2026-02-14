@@ -69,6 +69,8 @@ html, body {
     inset: 0;
     object-fit: cover;
     background: transparent;
+    transform: scale(1.1);
+    transform-origin: center center;
 }
 .bk_asian path {
     fill: rgba(233, 30, 99, 0);
