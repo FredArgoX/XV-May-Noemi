@@ -1,46 +1,119 @@
+/*Google Fonts @import url*/
+/*__________________________________________________________________________________________*/
+/*:root variables*/
+:root{
+    /*Colors*/
+    --color-base-red: #A02C2B;
+    --color-base-blue: #2F2F49;
+    --color-base-cream1: #e7dfd4;
+    --color-base-cream2: #e6ded3;
+    --color-base-white: #FFFFFF;
+    --color-base-black: #000000;
+    /*Spacing*/
+    --genaral-gap: 15px;
+    --general-margin: 15px;
+    --general-padding: 15px;
+    --general-border-radius: 6px;
+}
+/*__________________________________________________________________________________________*/
+/*Basic layout style*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+/*__________________________________________________________________________________________*/
+/*Whole Background gradient*/
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, var(--color-base-cream1) 0%, var(--color-base-cream2) 100%);
+}
 
-.svg_xt{
-    background: none;
-}
-.svg_x2{
-    fill: red;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*__________________________________________________________________________________________*/
+/*__________________________________________________________________________________________*/
+/*__________________________________________________________________________________________*/
+.svg_xt01{
+    background: none;
+    position: fixed;
+    top: 0px;
+    left: -8px;
+    width: 200px;
+    height: auto;
+}
+.svg_xt02{
+    background: none;
+    position: fixed;
+    bottom: 0px;
+    right: -50px;
+    width: 200px;
+    height: auto;
+    rotate: 240deg;
+}
+/*__________________________________________________________________________________________*/
+/*__________________________________________________________________________________________*/
 /* branch */
 .s01{
-    fill: blue;
+    fill: #462413;
 }
 /*__________________________________________________________________________________________*/
 /* petal */
 .s02{
-    fill: aqua;
+    fill: #ec2861;
 }
 /* petal */
 .s03{
-    fill: blueviolet;
+    fill: #f25477;
 }
 /* support */
 .s04{
-    fill: chartreuse;
+    fill: #999D55;
 }
 /*__________________________________________________________________________________________*/
 /* petal */
 .s05{
-    fill: black;
+    fill: #f25477;
 }
 /* petal */
 .s06{
-    fill: brown;
+    fill: #ec2861;
 }
 /* petal */
 .s07{
-    fill: chocolate;
+    fill: #eb7a7a;
 }
 /* support */
 .s08{
-    fill: crimson;
+    fill: #999D55;
 }
 /*__________________________________________________________________________________________*/
 /* palitos */
@@ -49,7 +122,8 @@
 .s11,
 .s12,
 .s13{
-    fill: purple;
+    fill: rgb(218, 214, 0);
+    fill-opacity: 1.0;
 }
 /* petals */
 .s14,
@@ -57,7 +131,8 @@
 .s16,
 .s17,
 .s18{
-    fill: salmon;
+    fill: #ec2861;
+    fill-opacity: 1.0;
 }
 /*__________________________________________________________________________________________*/
 /* palitos */
@@ -66,7 +141,8 @@
 .s21,
 .s22,
 .s23{
-    fill: purple;
+    fill: rgb(218, 214, 0);
+    fill-opacity: 1.0;
 }
 /* petals */
 .s24,
@@ -74,8 +150,8 @@
 .s26,
 .s27,
 .s28{
-    fill: black;
-    fill-opacity: 0.3;
+    fill: #ec2861;
+    fill-opacity: 1.0;
 
 }
 /*__________________________________________________________________________________________*/
@@ -85,7 +161,8 @@
 .s31,
 .s32,
 .s33{
-    fill: navy;
+    fill: rgb(218, 214, 0);
+    fill-opacity: 1.0;
 }
 /* petals */
 .s34,
@@ -93,11 +170,65 @@
 .s36,
 .s37,
 .s38{
-    fill: lightcoral;
-    fill-opacity: 0.9;
+    fill: #ec2861;
+    fill-opacity: 1.0;
 
 }
 /*__________________________________________________________________________________________*/
-
+.s10,
+.s12,
+.s20,
+.s22,
+.s30,
+.s32{
+    fill: rgb(127, 182, 0);
+    fill-opacity: 1.0;
+}
 /*__________________________________________________________________________________________*/
+/*__________________________________________________________________________________________*/
+.sakura01{
+    transform-origin: 50% 50%; /* Center of the group's bounding box */
+    animation: slight-rotate-01 4s infinite ease-in-out;
+}
+.sakura02{
+    transform-origin: 50% 50%; /* Center of the group's bounding box */
+    animation: slight-rotate-02 6s infinite ease-in-out;
+}
+.sakura03 {
+  transform-origin: 50% 50%; /* Center of the group's bounding box */
+  animation: slight-rotate-03 8s infinite ease-in-out;
+}
 
+@keyframes slight-rotate-01 {
+  0% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes slight-rotate-02 {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes slight-rotate-03 {
+  0% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
