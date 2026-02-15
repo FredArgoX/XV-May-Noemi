@@ -179,35 +179,35 @@ body{
 }
 @keyframes slight-rotate-01 {
   0% {
-    transform: rotate(-3deg);
+    transform: rotate(-6deg);
   }
   50% {
-    transform: rotate(-1deg);
+    transform: rotate(6deg);
   }
   100% {
-    transform: rotate(-3deg);
+    transform: rotate(-6deg);
   }
 }
 @keyframes slight-rotate-02 {
   0% {
-    transform: rotate(-2deg);
+    transform: rotate(-6deg);
   }
   50% {
-    transform: rotate(1deg);
+    transform: rotate(8deg);
   }
   100% {
-    transform: rotate(-2deg);
+    transform: rotate(-6deg);
   }
 }
 @keyframes slight-rotate-03 {
   0% {
-    transform: rotate(1deg);
+    transform: rotate(8deg);
   }
   50% {
-    transform: rotate(-3deg);
+    transform: rotate(-8deg);
   }
   100% {
-    transform: rotate(1deg);
+    transform: rotate(8deg);
   }
 }
 /*__________________________________________________________________________________________*/
