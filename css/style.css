@@ -31,6 +31,7 @@ html{
 /*Whole Background gradient*/
 html,
 body{
+    position: relative;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -221,10 +222,10 @@ footer{
     z-index: 10;
 }
 /*__________________________________________________________________________________________*/
+/*
 header{
     margin: 0;
     padding: 0;
-    /*border: 1px solid crimson;*/
     min-height: 100vh;
     min-width: 100%;
     display: flex;
@@ -235,7 +236,6 @@ header{
 #XV{
     margin: var(--general-margin);
     width: 100%;
-    /*border: 1px solid crimson;*/
     text-align: center;
     color: var(--color-base-red);
     font-weight: bolder;
@@ -244,9 +244,82 @@ header{
 #names{
     margin: var(--general-margin);
     width: 100%;
-    /*border: 1px solid crimson;*/
     text-align: center;
     color: var(--color-base-blue);
     font-weight: bolder;
     font-size: 4rem;
 }
+*/
+/*__________________________________________________________________________________________*/
+body {
+      /*background: #000;*/
+      background: none;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /*background: #444;*/
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*__________________________________________________________________________________________*/
+/* Front */
+#s01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--general-padding);
+}
+#s01x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: var(--general-border-radius);
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+*{
+    border: 1px solid coral;
+}
+*/
