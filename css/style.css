@@ -9,6 +9,10 @@
     --color-base-cream2: #e6ded3;
     --color-base-white: #FFFFFF;
     --color-base-black: #000000;
+    --color-base-icon-stroke: #2F2F49;
+    --color-base-icon-cream: rgb(231, 223, 212);
+    --color-base-icon-pink01: #ec2861;
+    --color-base-icon-brown01: rgb(95, 51, 26);
     /*Spacing*/
     --genaral-gap: 15px;
     --general-margin: 15px;
@@ -281,7 +285,7 @@ body {
 }
 .swiper-pagination{
     /*background-color: #ec2861;*/
-    right: 0.35rem !important;
+    left: 0.35rem !important;
 }
 /* Active bullet */
 /*
@@ -387,16 +391,87 @@ body {
     */
 }
 
-
-
-
-
-
-
-
-
-
-
+/* Reception icon */
+.ic_reception{
+    width: 100px;
+}
+/* Reception icon parts */
+.ic_reception_01,
+.ic_reception_02,
+.ic_reception_03,
+.ic_reception_04,
+.ic_reception_05,
+.ic_reception_06,
+.ic_reception_07,
+.ic_reception_08,
+.ic_reception_09,
+.ic_reception_10,
+.ic_reception_11,
+.ic_reception_12,
+.ic_reception_13,
+.ic_reception_14,
+.ic_reception_15,
+.ic_reception_16,
+.ic_reception_17,
+.ic_reception_18,
+.ic_reception_19,
+.ic_reception_20,
+.ic_reception_21,
+.ic_reception_22,
+.ic_reception_23,
+.ic_reception_24{
+    fill: blue;
+    fill-opacity: 1.0;
+}
+/*door handle*/
+.ic_reception_01,
+.ic_reception_02{
+    fill: var(--color-base-icon-stroke);
+}
+/*letters welcome*/
+.ic_reception_03,
+.ic_reception_04,
+.ic_reception_05,
+.ic_reception_06,
+.ic_reception_07,
+.ic_reception_08,
+.ic_reception_09,
+.ic_reception_10,
+.ic_reception_11,
+.ic_reception_12,
+.ic_reception_13
+{
+    fill: var(--color-base-icon-pink01);
+}
+/*main contour*/
+.ic_reception_14{
+    fill: var(--color-base-icon-stroke);
+}
+/*XV - V*/
+.ic_reception_15{
+    fill: var(--color-base-icon-pink01);
+}
+/*XV - X*/
+.ic_reception_16{
+    fill: var(--color-base-icon-stroke);
+}
+/*Noemi letters*/
+.ic_reception_17,
+.ic_reception_18,
+.ic_reception_19,
+.ic_reception_20,
+.ic_reception_21
+{
+    fill: var(--color-base-icon-pink01);
+    stroke: var(--color-base-icon-pink01);
+}
+/*May letters*/
+.ic_reception_22,
+.ic_reception_23,
+.ic_reception_24{
+    fill: var(--color-base-icon-stroke);
+    stroke: var(--color-base-icon-stroke);
+}
 
 
 
