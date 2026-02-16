@@ -256,7 +256,7 @@ body {
       background: none;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
-      color: #fff;
+      color: var(--color-base-blue);
       margin: 0;
       padding: 0;
 }
