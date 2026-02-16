@@ -289,10 +289,10 @@ body {
   background: #ec2861 !important;
 }
 */
-/* === EVERY bullet (base styles) === */
+/* EVERY bullet (base styles) */
 .swiper-pagination-bullet {
     background: #eb7a7a !important;
-    /* 🔥 THE ANIMATION MAGIC */
+    /* THE ANIMATION MAGIC */
     transition: 
         background-color 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),   /* bouncy color pop */
         border-color 0.4s ease,
@@ -301,7 +301,7 @@ body {
         opacity 0.4s ease;
     will-change: background-color, border-color, box-shadow, transform;
 }
-/* === ACTIVE bullet (current slide) === */
+/* ACTIVE bullet (current slide) */
 .swiper-pagination-bullet-active {
     background: #ec2861 !important;
     transform: scale(1.3);
