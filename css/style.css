@@ -279,6 +279,10 @@ body {
     height: 100%;
     object-fit: cover;
 }
+.swiper-pagination{
+    /*background-color: #ec2861;*/
+    right: 0.35rem !important;
+}
 /*__________________________________________________________________________________________*/
 /* Front */
 #s01{
