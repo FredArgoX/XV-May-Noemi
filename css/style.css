@@ -5,7 +5,7 @@
     /*Colors*/
     --color-base-red: #A02C2B;
     --color-base-blue: #2F2F49;
-    --color-base-cream1: #e7dfd4;
+    --color-base-cream1: rgb(231, 223, 212);
     --color-base-cream2: #e6ded3;
     --color-base-white: #FFFFFF;
     --color-base-black: #000000;
@@ -329,9 +329,10 @@ body {
     border-radius: var(--general-border-radius);
     height: 100%;
     width: 100%;
-    background: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    /*background: rgba(255, 255, 255, 0.12);*/
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(4px);
+    /*border: 1px solid rgba(255, 255, 255, 0.2);*/
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
