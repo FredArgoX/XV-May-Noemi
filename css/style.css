@@ -1,4 +1,7 @@
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*__________________________________________________________________________________________*/
 /*Google Fonts @import url*/
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /*:root variables*/
 :root{
@@ -25,6 +28,7 @@
     --general-padding: 15px;
     --general-border-radius: 6px;
 }
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /*Basic layout style*/
 *{
@@ -37,6 +41,7 @@ html{
     font-size: 62.5%;
     height: 100%;
 }
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /*Whole Background gradient*/
 html,
@@ -47,9 +52,9 @@ body{
     padding: 0;
     background: linear-gradient(135deg, var(--color-base-cream1) 0%, var(--color-base-cream2) 100%);
 }
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
-/*__________________________________________________________________________________________*/
-/*__________________________________________________________________________________________*/
+/* SVG Sakura decoration */
 .svg_xt01{
     background: none;
     position: fixed;
@@ -67,7 +72,6 @@ body{
     height: auto;
     rotate: 240deg;
 }
-/*__________________________________________________________________________________________*/
 /*__________________________________________________________________________________________*/
 /* branch */
 .s01{
@@ -163,19 +167,6 @@ body{
 
 }
 /*__________________________________________________________________________________________*/
-/*
-.s10,
-.s12,
-.s20,
-.s22,
-.s30,
-.s32{
-    fill: rgb(127, 182, 0);
-    fill-opacity: 1.0;
-}
-*/
-/*__________________________________________________________________________________________*/
-/*__________________________________________________________________________________________*/
 .sakura01{
     transform-origin: 50% 50%; /* Center of the group's bounding box */
     animation: slight-rotate-01 4s infinite ease-in-out;
@@ -221,8 +212,7 @@ body{
     transform: rotate(8deg);
   }
 }
-/*__________________________________________________________________________________________*/
-/*__________________________________________________________________________________________*/
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /*Actual content*/
 header,
@@ -231,45 +221,31 @@ footer{
     position: relative;
     z-index: 10;
 }
-/*__________________________________________________________________________________________*/
-/*
-header{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-#XV{
-    margin: var(--general-margin);
-    width: 100%;
-    text-align: center;
-    color: var(--color-base-red);
-    font-weight: bolder;
-    font-size: 6rem;
-}
-#names{
-    margin: var(--general-margin);
-    width: 100%;
-    text-align: center;
-    color: var(--color-base-blue);
-    font-weight: bolder;
-    font-size: 4rem;
-}
-*/
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 body {
       /*background: #000;*/
       background: none;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif; /* //////////////////////////////////////////////////////////////////////////////////////// */ 
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+      /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
       font-size: 14px;
       color: var(--color-base-blue);
       margin: 0;
       padding: 0;
 }
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*__________________________________________________________________________________________*/
 .swiper {
     width: 100%;
     height: 100%;
@@ -293,12 +269,6 @@ body {
     /*background-color: #ec2861;*/
     left: 0.35rem !important;
 }
-/* Active bullet */
-/*
-.swiper-pagination-bullet-active {
-  background: #ec2861 !important;
-}
-*/
 /* EVERY bullet (base styles) */
 .swiper-pagination-bullet {
     background: #eb7a7a !important;
@@ -322,81 +292,9 @@ body {
   opacity: 0.5 !important;
   transform: scale(1.0);
 }
+/* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
-/* Front */
-#s01{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: var(--general-padding);
-}
-#s01x{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: var(--general-border-radius);
-    height: 100%;
-    width: 100%;
-    background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(4px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    /*border: 1px solid rgba(255, 255, 255, 0.2);*/
-    border-top-left-radius: 100% 50%;
-    border-bottom-right-radius: 100% 50%;
-}
-#XV{
-    width: 20rem;
-}
-/*V*/
-.xv01{
-    fill: #ec2861;
-}
-/*X*/
-.xv02{
-    fill: #2F2F49;
-}
-.xv03, .xv04, .xv05, .xv06, .xv07{
-    fill: #ec2861;
-    stroke-width: 5;
-    stroke: #ec2861;
-}
-.xv08, .xv09, .xv10{
-    fill: #2F2F49;
-    stroke-width: 5;
-    stroke: #2F2F49;
-}
-/*__________________________________________________________________________________________*/
-#s02{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: var(--general-padding);
-    padding-block-start: 0px;
-    padding-block-end: 0px;
-}
-#s02x{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-radius: var(--general-border-radius);
-    height: 100%;
-    width: 100%;
-    background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(16px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    padding: var(--general-padding);
-    /*border: 1px solid rgba(255, 255, 255, 0.2);*/
-    /*
-    border-top-left-radius: 100% 50%;
-    border-bottom-right-radius: 100% 50%;
-    */
-}
-/*__________________________________________________________________________________________*/
+/* SVG ICONS common code */
 .svg_container{
     height: min-content;
     width: min-content;
@@ -409,6 +307,9 @@ svg{
     width: auto;
     height: auto;
 }
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*__________________________________________________________________________________________*/
+/* SVG ICONS specific */
 /*__________________________________________________________________________________________*/
 /* Reception icon */
 .ic_reception{
@@ -490,34 +391,6 @@ svg{
 .ic_reception_24{
     fill: var(--color-base-icon-stroke);
     stroke: var(--color-base-icon-stroke);
-}
-/*__________________________________________________________________________________________*/
-#s03{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: var(--general-padding);
-    padding-block-start: 0px;
-    padding-block-end: 0px;
-}
-#s03x{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: var(--general-border-radius);
-    height: 100%;
-    width: 100%;
-    background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(16px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    padding: var(--general-padding);
-    /*border: 1px solid rgba(255, 255, 255, 0.2);*/
-    /*
-    border-top-left-radius: 100% 50%;
-    border-bottom-right-radius: 100% 50%;
-    */
 }
 /*__________________________________________________________________________________________*/
 /* Calendar icon */
@@ -798,6 +671,215 @@ svg{
 {
     fill: var(--color-base-icon-pink01);
 }
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*__________________________________________________________________________________________*/
+/* Slider 01 */
+#s01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--general-padding);
+}
+#s01x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: var(--general-border-radius);
+    height: 100%;
+    width: 100%;
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 100% 50%;
+    border-bottom-right-radius: 100% 50%;
+}
+#XV{
+    width: 20rem;
+}
+/*V*/
+.xv01{
+    fill: #ec2861;
+}
+/*X*/
+.xv02{
+    fill: #2F2F49;
+}
+.xv03, .xv04, .xv05, .xv06, .xv07{
+    fill: #ec2861;
+    stroke-width: 5;
+    stroke: #ec2861;
+}
+.xv08, .xv09, .xv10{
+    fill: #2F2F49;
+    stroke-width: 5;
+    stroke: #2F2F49;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*__________________________________________________________________________________________*/
+/* Slider 02 */
+#s02{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--general-padding);
+    padding-block-start: 0px;
+    padding-block-end: 0px;
+    border: 1px solid chartreuse;
+}
+#s02x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: var(--general-border-radius);
+    height: 100%;
+    width: 100%;
+    /*
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    */
+    padding: var(--general-padding);
+    border: 1px solid black;
+}
+#date_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: min-content;
+}
+#countdown_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#countdown_boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#reminder_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*__________________________________________________________________________________________*/
+/* Slider 03 */
+#s03{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--general-padding);
+    padding-block-start: 0px;
+    padding-block-end: 0px;
+    border: 1px solid blue;
+}
+#s03x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: var(--general-border-radius);
+    height: 100%;
+    width: 100%;
+    
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    
+    padding: var(--general-padding);
+    border: 1px solid black;
+}
+#place_time_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#map_container{
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#map_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*__________________________________________________________________________________________*/
 
 
 
+
+
+*{
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*__________________________________________________________________________________________*/
+/* Slider Containing SVG ICONS */
+#s02-remove{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--general-padding);
+    padding-block-start: 0px;
+    padding-block-end: 0px;
+}
+#s02x-remove{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: var(--general-border-radius);
+    height: 100%;
+    width: 100%;
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    padding: var(--general-padding);
+}
+/*__________________________________________________________________________________________*/
