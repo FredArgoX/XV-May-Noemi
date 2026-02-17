@@ -9,13 +9,16 @@
     --color-base-cream2: #e6ded3;
     --color-base-white: #FFFFFF;
     --color-base-black: #000000;
-    --color-base-icon-stroke: #2F2F49;
+    --color-base-icon-stroke: #301E0F;
     --color-base-icon-cream: rgb(231, 223, 212);
-    --color-base-icon-pink01: #ec2861;
+    --color-base-icon-cream02: #EECE91;
+    --color-base-icon-pink01: #CA6C55;
     --color-base-icon-brown01: rgb(95, 51, 26);
+    --color-base-icon-brown02: #825435;
     --color-base-icon-reddress: #A02C2B;
     --color-base-icon-blue-dress: #063499;
     --color-base-icon-grey: #202020;
+    --color-base-icon-green01: #849D87;
     /*Spacing*/
     --genaral-gap: 15px;
     --general-margin: 15px;
@@ -409,7 +412,7 @@ svg{
 /*__________________________________________________________________________________________*/
 /* Reception icon */
 .ic_reception{
-    width: 100px;
+    height: 100px;
 }
 /* Reception icon parts */
 .ic_reception_01,
@@ -567,7 +570,7 @@ svg{
 /*__________________________________________________________________________________________*/
 /* Girls icon */
 .ic_girls{
-    width: 100px;
+    height: 100px;
 }
 /* Girls icon parts */
 .ic_girls_01,
@@ -584,18 +587,18 @@ svg{
 }
 /*right dress*/
 .ic_girls_02{
-    fill: var(--color-base-icon-reddress);
+    fill: var(--color-base-icon-pink01);
 }
 /*left dress*/
 .ic_girls_03,
 .ic_girls_04
 {
-    fill: var(--color-base-icon-blue-dress);
+    fill: var(--color-base-icon-pink01);
 }
 /*__________________________________________________________________________________________*/
 /* Dance icon */
 .ic_dance{
-    width: 100px;
+    height: 100px;
 }
 /* Dance icon parts */
 .ic_dance_01,
@@ -615,7 +618,7 @@ svg{
 .ic_dance_02,
 .ic_dance_05
 {
-    fill: var(--color-base-icon-grey);
+    fill: var(--color-base-icon-cream);
 }
 /*woman's dress*/
 .ic_dance_03,
@@ -623,9 +626,91 @@ svg{
 {
     fill: var(--color-base-icon-pink01);
 }
-
-
-
+/*__________________________________________________________________________________________*/
+/* RSVP icon */
+.ic_rsvp{
+    width: 100px;
+}
+/* Dance icon parts */
+.ic_rsvp_01,
+.ic_rsvp_02,
+.ic_rsvp_03,
+.ic_rsvp_04,
+.ic_rsvp_05,
+.ic_rsvp_06,
+.ic_rsvp_07,
+.ic_rsvp_08
+{
+    /*fill: blue;*/
+    fill-opacity: 1.0;
+}
+/*main contour*/
+.ic_rsvp_01{
+    fill: var(--color-base-icon-stroke);
+}
+/*letters*/
+.ic_rsvp_02,
+.ic_rsvp_03,
+.ic_rsvp_04,
+.ic_rsvp_06
+{
+    fill: var(--color-base-icon-stroke);
+}
+/*palomita*/
+.ic_rsvp_05{
+    fill: var(--color-base-icon-pink01);
+}
+/*lines*/
+.ic_rsvp_07,
+.ic_rsvp_08
+{
+    fill: var(--color-base-icon-stroke);
+}
+/*__________________________________________________________________________________________*/
+/* RSVP icon */
+.ic_food{
+    width: 100px;
+}
+/* Dance icon parts */
+.ic_food_01,
+.ic_food_02,
+.ic_food_03,
+.ic_food_04,
+.ic_food_05,
+.ic_food_06,
+.ic_food_07,
+.ic_food_08,
+.ic_food_09,
+.ic_food_10
+{
+    /*fill: blue;*/
+    fill-opacity: 1.0;
+}
+/*main contour*/
+.ic_food_01,
+.ic_food_02,
+.ic_food_04
+{
+    fill: var(--color-base-icon-stroke);
+}
+/*bread*/
+.ic_food_03{
+    fill: var(--color-base-icon-cream02);
+}
+/*food*/
+.ic_food_05,
+.ic_food_06,
+.ic_food_07,
+.ic_food_10
+{
+    fill: var(--color-base-icon-brown02);
+}
+/*leaves*/
+.ic_food_08,
+.ic_food_09
+{
+    fill: var(--color-base-icon-green01);
+}
 
 
 
