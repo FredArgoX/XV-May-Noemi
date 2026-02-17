@@ -631,7 +631,7 @@ svg{
 .ic_rsvp{
     width: 100px;
 }
-/* Dance icon parts */
+/* RSVP icon parts */
 .ic_rsvp_01,
 .ic_rsvp_02,
 .ic_rsvp_03,
@@ -667,11 +667,11 @@ svg{
     fill: var(--color-base-icon-stroke);
 }
 /*__________________________________________________________________________________________*/
-/* RSVP icon */
+/* Food icon */
 .ic_food{
     width: 100px;
 }
-/* Dance icon parts */
+/* Food icon parts */
 .ic_food_01,
 .ic_food_02,
 .ic_food_03,
@@ -711,10 +711,93 @@ svg{
 {
     fill: var(--color-base-icon-green01);
 }
-
-
-
-
+/*__________________________________________________________________________________________*/
+/* Brindis icon */
+.ic_brindis{
+    height: 100px;
+}
+/* Brindis icon parts */
+.ic_brindis_01,
+.ic_brindis_02,
+.ic_brindis_03
+{
+    /*fill: blue;*/
+    fill-opacity: 1.0;
+}
+/*main contour*/
+.ic_brindis_03{
+    fill: var(--color-base-icon-stroke);
+}
+.ic_brindis_01,
+.ic_brindis_02
+{
+    fill: var(--color-base-icon-cream02);
+}
+/*__________________________________________________________________________________________*/
+/* Dress code icon */
+.ic_dresscode{
+    height: 100px;
+}
+/* Dress code icon parts */
+.ic_brindis_01
+{
+    /*fill: blue;*/
+    fill-opacity: 1.0;
+}
+.ic_dresscode_01{
+    fill: var(--color-base-icon-stroke);
+}
+/*__________________________________________________________________________________________*/
+/* Present icon */
+.ic_present{
+    height: 100px;
+}
+/* Presnet icon parts */
+.ic_present_01,
+.ic_present_02,
+.ic_present_03,
+.ic_present_04,
+.ic_present_05,
+.ic_present_06,
+.ic_present_07,
+.ic_present_08,
+.ic_present_09,
+.ic_present_10,
+.ic_present_11,
+.ic_present_12,
+.ic_present_13,
+.ic_present_14,
+.ic_present_15
+{
+    /*fill: blue;*/
+    fill-opacity: 1.0;
+}
+/*main_contour*/
+.ic_present_01{
+    fill: var(--color-base-icon-stroke);
+}
+/*box*/
+.ic_present_02,
+.ic_present_03,
+.ic_present_05,
+.ic_present_06,
+.ic_present_14,
+.ic_present_15
+{
+    fill: var(--color-base-icon-cream02);
+}
+/*bun*/
+.ic_present_04,
+.ic_present_07,
+.ic_present_08,
+.ic_present_09,
+.ic_present_10,
+.ic_present_11,
+.ic_present_12,
+.ic_present_13
+{
+    fill: var(--color-base-icon-pink01);
+}
 
 
 
