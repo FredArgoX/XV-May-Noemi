@@ -953,6 +953,184 @@ svg{
 
 
 
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*__________________________________________________________________________________________*/
+/* Slider 08 */
+#s08{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: var(--general-padding);
+    padding-block-start: 0px;
+    padding-block-end: 0px;
+    border: 1px solid salmon;
+}
+#s08x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: var(--general-border-radius);
+    height: 100%;
+    width: 100%;
+    
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    
+    padding: var(--general-padding);
+    border: 1px solid black;
+}
+
+
+
+
+
+
+.FARGOX {
+    width: 300px; /* Adjust size as needed */
+    height: 300px;
+}
+
+/* Set variables and initial dash properties for strokes */
+.diagonal-dark1 {
+    --length: 450;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+    animation: drawForward 12s infinite alternate, wildStroke 30s infinite;
+}
+
+.diagonal-dark2 {
+    --length: 450;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+    animation: drawForward 12s infinite alternate, wildStroke 30s infinite;
+}
+
+.vertical-white1 {
+    --length: 225;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+    animation: drawForward 12s infinite alternate, wildStroke 12s infinite;
+}
+
+.vertical-white2 {
+    --length: 225;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+    animation: drawForward 12s infinite alternate, wildStroke 12s infinite;
+}
+
+.short-white1 {
+    --length: 113;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+    animation: drawForward 12s infinite alternate, wildStroke 12s infinite;
+}
+
+.short-white2 {
+    --length: 113;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+    animation: drawForward 12s infinite alternate, wildStroke 12s infinite;
+}
+
+.long-white1 {
+    --length: 271;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: 0;
+    animation: drawForward 12s infinite alternate, wildStroke 12s infinite;
+}
+
+.long-white2 {
+    --length: 271;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: 0;
+    animation: drawForward 12s infinite alternate, wildStroke 12s infinite;
+}
+
+.mid-white1 {
+    --length: 56;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+    animation: drawForward 12s infinite alternate, wildStroke 12s infinite;
+}
+
+.mid-white2 {
+    --length: 56;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: var(--length);
+    animation: drawForward 12s infinite alternate, wildStroke 12s infinite;
+}
+
+.side-white1 {
+    --length: 56;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: 0;
+    animation: drawForward 12s infinite alternate, wildStroke 12s infinite;
+}
+
+.side-white2 {
+    --length: 56;
+    stroke-dasharray: var(--length);
+    stroke-dashoffset: 0;
+    animation: drawForward 12s infinite alternate, wildStroke 12s infinite;
+}
+
+.bg-hex {
+    transform-origin: 300px 300px;
+    animation: wildFill 60s infinite;/*, wildStroke 3s infinite;/*rotateWild 0.3s infinite linear;*/
+}
+
+/* Keyframes for drawing with more time spent in complete state */
+@keyframes drawForward {
+    0% { stroke-dashoffset: var(--length); }
+    10% { stroke-dashoffset: 0; }
+    90% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: var(--length); }
+}
+
+@keyframes drawReverse {
+    0% { stroke-dashoffset: 0; }
+    10% { stroke-dashoffset: 0; }
+    90% { stroke-dashoffset: calc(-1 * var(--length)); }
+    100% { stroke-dashoffset: calc(-1 * var(--length)); }
+}
+
+/* Greyscale color change for strokes, inverted for contrast */
+@keyframes wildStroke {
+    0% { stroke: #ffffff; }
+    20% { stroke: #cccccc; }
+    40% { stroke: #999999; }
+    60% { stroke: #666666; }
+    80% { stroke: #333333; }
+    100% { stroke: #000000; }
+}
+
+/* Greyscale color change for fill */
+@keyframes wildFill {
+    0% { fill: #191919; }
+    20% { fill: #333333; }
+    40% { fill: #666666; }
+    60% { fill: #999999; }
+    80% { fill: #cccccc; }
+    100% { fill: #eeeeee; }
+}
+
+/* Updated rotate wild */
+@keyframes rotateWild {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
 *{
     border: 1px solid black;
 }
