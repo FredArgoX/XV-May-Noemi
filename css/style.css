@@ -1105,11 +1105,10 @@ svg{
 /* Greyscale color change for strokes, inverted for contrast */
 @keyframes wildStroke {
     0% { stroke: #ffffff; }
-    20% { stroke: #cccccc; }
-    40% { stroke: #999999; }
-    60% { stroke: #666666; }
-    80% { stroke: #333333; }
-    100% { stroke: #000000; }
+    25% { stroke: #666666; }
+    50% { stroke: #333333; }
+    75% { stroke: #000000; }
+    100% { stroke: #ffffff;}
 }
 
 /* Greyscale color change for fill */
@@ -1119,7 +1118,8 @@ svg{
     40% { fill: #666666; }
     60% { fill: #999999; }
     80% { fill: #cccccc; }
-    100% { fill: #eeeeee; }
+    90% { fill: #eeeeee; }
+    100% { fill: #191919; }
 }
 
 /* Updated rotate wild */
