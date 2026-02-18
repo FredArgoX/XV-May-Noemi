@@ -16,7 +16,7 @@
     --color-base-icon-stroke: #301E0F;
     --color-base-icon-cream: rgb(231, 223, 212);
     --color-base-icon-cream02: #EECE91;
-    --color-base-icon-pink01: #CA6C55;
+    --color-base-icon-pink01: #ec2861;
     --color-base-icon-brown01: #5f331a;
     --color-base-icon-brown02: #825435;
     --color-base-icon-reddress: #A02C2B;
@@ -733,9 +733,10 @@ svg{
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    border-top-left-radius: 50%;
     
     background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
@@ -765,6 +766,13 @@ svg{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: var(--general-padding);
+    background: var(--color-base-icon-pink01);
+    border-radius: var(--general-border-radius);
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.66);*/
+}
+#reminder_container p{
+    color: var(--color-base-icon-cream);
 }
 .day,
 .dayn,
@@ -793,11 +801,13 @@ svg{
     font-style: normal;
     font-size: calc(1.6rem * 1.5);
 }
+
 /*
 *{
     border: 1px solid black;
 }
-*/
+    */
+
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /* Slider 03 */
