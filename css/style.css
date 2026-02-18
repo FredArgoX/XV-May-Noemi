@@ -828,9 +828,10 @@ svg{
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    /*border-top-left-radius: 50%;*/
     
     background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
@@ -848,12 +849,28 @@ svg{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 2px solid var(--color-base-icon-pink01);
+    border-radius: var(--general-border-radius);
 }
 #map_button{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: var(--general-padding);
+    background: var(--color-base-icon-pink01);
+    border-radius: var(--general-border-radius);
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.66);*/
+}
+#map_button p{
+    color: var(--color-base-icon-cream);
+}
+.place,
+.time{
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(1.6rem * 2);
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
@@ -877,10 +894,16 @@ svg{
     width: 100%;
     
     background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
+}
+.title_itinerario{
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(1.6rem * 2);
 }
 .th_svg{
     display: flex;
@@ -898,7 +921,7 @@ th:nth-child(2){
     text-align: justify;
 }
 th:nth-child(1){
-    border-inline-end: 2px solid var(--color-base-icon-stroke);
+    border-inline-end: 2px solid var(--color-base-icon-pink01);
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
@@ -926,6 +949,12 @@ th:nth-child(1){
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
+}
+.title_dresscode{
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(1.6rem * 2);
 }
 /* Dress code */
 /* //////////////////////////////////////////////////////////////////////////////////////// */
