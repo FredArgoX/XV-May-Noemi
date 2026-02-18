@@ -735,6 +735,7 @@ svg{
     height: 100%;
     width: 100%;
     border-top-left-radius: 50%;
+    border-bottom-right-radius: calc(var(--general-border-radius)*18);
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
@@ -829,8 +830,9 @@ svg{
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
-    /*border-top-left-radius: 50%;*/
-    
+    border-top-left-radius: calc(var(--general-border-radius)*18);
+    border-top-right-radius: calc(var(--general-border-radius)*18);
+
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
@@ -893,6 +895,7 @@ svg{
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    border-radius: calc(var(--general-border-radius)*18);
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
@@ -944,6 +947,7 @@ th:nth-child(1){
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    border-radius: calc(var(--general-border-radius)*18);
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(10px);
@@ -984,6 +988,8 @@ th:nth-child(1){
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    border-top-left-radius: calc(var(--general-border-radius)*18);
+    border-top-right-radius: calc(var(--general-border-radius)*18);
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
@@ -1027,6 +1033,7 @@ th:nth-child(1){
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    border-radius: calc(var(--general-border-radius)*18);
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
