@@ -62,6 +62,38 @@ body{
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
+/* SVG Fullscreen */
+
+
+
+#fullscreenBtn {
+    all: unset;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999; /* High value to keep it on top; increase if needed */
+    /* Optional: Add visibility styles if not already present */
+    background-color: #007bff; /* Example button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: var(--general-border-radius);
+    animation: bgColorChange 1s linear infinite alternate; /* 5s duration, linear timing, infinite loop alternating back and forth */
+}
+/* Keyframes for the background color animation */
+@keyframes bgColorChange {
+    from {
+        background-color: var(--color-base-icon-pink01); /* Light pink (adjust hex code as needed) */
+    }
+    to {
+        background-color: var(--color-base-icon-pink02); /* Medium grey (adjust hex code as needed) */
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*__________________________________________________________________________________________*/
 /* SVG Sakura decoration */
 .svg_xt01{
     background: none;
