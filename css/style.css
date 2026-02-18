@@ -733,23 +733,21 @@ svg{
     padding: var(--general-padding);
     padding-block-start: 0px;
     padding-block-end: 0px;
-    border: 1px solid chartreuse;
 }
 #s02x{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: var(--general-border-radius);
+    /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
-    /*
+    
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(8px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    */
+    
     padding: var(--general-padding);
-    border: 1px solid black;
 }
 #date_container{
     display: flex;
@@ -787,23 +785,21 @@ svg{
     padding: var(--general-padding);
     padding-block-start: 0px;
     padding-block-end: 0px;
-    border: 1px solid blue;
 }
 #s03x{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: var(--general-border-radius);
+    /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
-    /*
+    
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(2px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    */
+    
     padding: var(--general-padding);
-    border: 1px solid black;
 }
 #place_time_container{
     display: flex;
@@ -836,14 +832,13 @@ svg{
     padding: var(--general-padding);
     padding-block-start: 0px;
     padding-block-end: 0px;
-    border: 1px solid blue;
 }
 #s04x{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: var(--general-border-radius);
+    /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
     
@@ -852,7 +847,6 @@ svg{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
-    border: 1px solid black;
 }
 .th_svg{
     display: flex;
@@ -871,14 +865,13 @@ svg{
     padding: var(--general-padding);
     padding-block-start: 0px;
     padding-block-end: 0px;
-    border: 1px solid crimson;
 }
 #s05x{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: var(--general-border-radius);
+    /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
     
@@ -887,7 +880,6 @@ svg{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
-    border: 1px solid black;
 }
 /* Dress code */
 /* //////////////////////////////////////////////////////////////////////////////////////// */
@@ -901,14 +893,13 @@ svg{
     padding: var(--general-padding);
     padding-block-start: 0px;
     padding-block-end: 0px;
-    border: 1px solid cyan;
 }
 #s06x{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: var(--general-border-radius);
+    /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
     
@@ -917,7 +908,6 @@ svg{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
-    border: 1px solid black;
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
@@ -930,14 +920,13 @@ svg{
     padding: var(--general-padding);
     padding-block-start: 0px;
     padding-block-end: 0px;
-    border: 1px solid salmon;
 }
 #s07x{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: var(--general-border-radius);
+    /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
     
@@ -946,7 +935,6 @@ svg{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
-    border: 1px solid black;
 }
 /*__________________________________________________________________________________________*/
 
@@ -969,23 +957,21 @@ svg{
     padding: var(--general-padding);
     padding-block-start: 0px;
     padding-block-end: 0px;
-    border: 1px solid salmon;
 }
 #s08x{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: var(--general-border-radius);
+    /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
-    
+    /*
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(5px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    
+    */
     padding: var(--general-padding);
-    border: 1px solid black;
 }
 
 
@@ -1132,9 +1118,6 @@ svg{
     100% { transform: rotate(360deg); }
 }
 
-*{
-    border: 1px solid black;
-}
 
 
 
