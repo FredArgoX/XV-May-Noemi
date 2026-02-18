@@ -987,7 +987,15 @@ svg{
 .th_svg > .svg_container > .ic_dance{
     height: 50px;
 }
-
+.ic_dresscode{
+    height: 100px;
+}
+.ic_present{
+    height: 100px;
+}
+.ic_rsvp{
+    width: 100px;
+}
 
 
 
