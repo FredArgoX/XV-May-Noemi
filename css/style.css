@@ -17,6 +17,7 @@
     --color-base-icon-cream: rgb(231, 223, 212);
     --color-base-icon-cream02: #EECE91;
     --color-base-icon-pink01: #ec2861;
+    --color-base-icon-pink02: #eb7a7a;
     --color-base-icon-brown01: #5f331a;
     --color-base-icon-brown02: #825435;
     --color-base-icon-reddress: #A02C2B;
@@ -688,7 +689,7 @@ svg{
     width: 100%;
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(4px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
     border-top-left-radius: 100% 50%;
     border-bottom-right-radius: 100% 50%;
 }
@@ -737,7 +738,7 @@ svg{
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
     
     padding: var(--general-padding);
 }
@@ -832,7 +833,7 @@ svg{
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
     
     padding: var(--general-padding);
 }
@@ -895,7 +896,7 @@ svg{
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
     
     padding: var(--general-padding);
 }
@@ -946,7 +947,7 @@ th:nth-child(1){
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
     
     padding: var(--general-padding);
 }
@@ -986,7 +987,7 @@ th:nth-child(1){
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
     
     padding: var(--general-padding);
 }
@@ -1029,7 +1030,7 @@ th:nth-child(1){
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
     
     padding: var(--general-padding);
 }
@@ -1045,6 +1046,58 @@ th:nth-child(1){
     font-style: normal;
     font-size: calc(1.6rem * 1.5);
 }
+.rsvp_form_container{
+    padding: var(--general-padding);
+}
+.rsvp_form_container,
+.form_rsvp
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form_rsvp{
+    gap: var(--general-gap);
+}
+.datum{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: calc(var(--general-gap)/2);
+}
+.datum label{
+    width: 100%;
+    text-align: justify;
+}
+.datum input{
+    width: 100%;
+    text-align: justify;
+    padding: var(--general-padding);
+    padding-block-start: calc(var(--general-padding)/2);
+    padding-block-end: calc(var(--general-padding)/2);
+    border-radius: var(--general-border-radius);
+    border: none;
+    background: var(--color-base-icon-pink02);
+}
+.submit_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--general-padding);
+    background: var(--color-base-icon-pink01);
+    border-radius: var(--general-border-radius);
+    color: var(--color-base-icon-cream);
+    border: none;
+    margin-block-start: calc(var(--general-margin)*1.5);
+}
+/*
+*{
+    border: 1px solid crimson;
+}
+*/
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /* Slider 08 */
@@ -1337,7 +1390,7 @@ th:nth-child(1){
     width: 100%;
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
     padding: var(--general-padding);
 }
 /*__________________________________________________________________________________________*/
