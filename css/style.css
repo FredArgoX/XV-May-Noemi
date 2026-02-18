@@ -927,6 +927,41 @@ th:nth-child(2){
 th:nth-child(1){
     border-inline-end: 2px solid var(--color-base-icon-pink01);
 }
+
+
+
+
+
+/* Initial state: hidden */
+#itinerario_table_container {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.1s ease-out; /* Small transition for smoothness if needed */
+}
+
+/* Active state: apply animation when in view */
+#itinerario_table_container.reveal-active {
+    animation: reveal 6s linear forwards;
+}
+
+/* Keyframes for the reveal animation */
+@keyframes reveal {
+    from {
+        max-height: 0;
+    }
+    to {
+        max-height: 100%; /* Set this to a value larger than your table's height; use px for reliability */
+    }
+}
+/* Spacer to simulate scrolling (for demo purposes) */
+/*
+.spacer {
+    height: 100vh; 
+    background-color: #f0f0f0;
+    text-align: center;
+    padding-top: 40vh;
+}
+*/
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /* Slider 05 */
