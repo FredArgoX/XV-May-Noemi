@@ -689,7 +689,7 @@ svg{
     width: 100%;
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(4px);
-    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     border-top-left-radius: 100% 50%;
     border-bottom-right-radius: 100% 50%;
 }
@@ -738,7 +738,7 @@ svg{
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
 }
@@ -833,7 +833,7 @@ svg{
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
 }
@@ -896,7 +896,7 @@ svg{
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
 }
@@ -947,7 +947,7 @@ th:nth-child(1){
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(10px);
-    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
 }
@@ -987,7 +987,7 @@ th:nth-child(1){
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
 }
@@ -1030,7 +1030,7 @@ th:nth-child(1){
     
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
 }
@@ -1390,7 +1390,7 @@ th:nth-child(1){
     width: 100%;
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     padding: var(--general-padding);
 }
 /*__________________________________________________________________________________________*/
