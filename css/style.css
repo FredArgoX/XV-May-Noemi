@@ -268,6 +268,7 @@ body {
 .swiper-pagination{
     /*background-color: #ec2861;*/
     left: 0.35rem !important;
+    width: min-content;
 }
 /* EVERY bullet (base styles) */
 .swiper-pagination-bullet {
@@ -1084,7 +1085,7 @@ svg{
 
 .bg-hex {
     transform-origin: 300px 300px;
-    animation: wildFill 60s infinite;/*, wildStroke 3s infinite;/*rotateWild 0.3s infinite linear;*/
+    /*animation: wildFill 60s infinite;/*, wildStroke 3s infinite;/*rotateWild 0.3s infinite linear;*/
 }
 
 /* Keyframes for drawing with more time spent in complete state */
@@ -1097,9 +1098,9 @@ svg{
 
 @keyframes drawReverse {
     0% { stroke-dashoffset: 0; }
-    10% { stroke-dashoffset: 0; }
-    90% { stroke-dashoffset: calc(-1 * var(--length)); }
-    100% { stroke-dashoffset: calc(-1 * var(--length)); }
+    80% { stroke-dashoffset: 0; }
+    90% { stroke-dashoffset: var(--length); }
+    100% { stroke-dashoffset: var(--length); }
 }
 
 /* Greyscale color change for strokes, inverted for contrast */
