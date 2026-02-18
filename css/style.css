@@ -956,6 +956,12 @@ th:nth-child(1){
     font-style: normal;
     font-size: calc(1.6rem * 2);
 }
+.formal{
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(1.6rem * 1.5);
+}
 /* Dress code */
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
@@ -979,10 +985,26 @@ th:nth-child(1){
     width: 100%;
     
     background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
+}
+.title_present{
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(1.6rem * 2);
+}
+.present_text_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--general-gap);
+}
+.present_text_container p{
+    text-align: justify;
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
@@ -1006,10 +1028,22 @@ th:nth-child(1){
     width: 100%;
     
     background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
+}
+.title_rsvp{
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(1.6rem * 2);
+}
+.text_rsvp{
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: calc(1.6rem * 1.5);
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
