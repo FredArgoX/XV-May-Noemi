@@ -785,15 +785,10 @@ svg{
     z-index: -3;
 }
 
-
-.dx_stain{
-    width: 300px;
-}
-
-#eawulv0KD7b1{
+#epSeWvumk2P1{
     position: fixed;
-    width: 900px;
-    left: calc((100vw - 300px) / 2);
+    width: 700px;
+    left: calc((100vw - 280px) / 2);
 }
 
 
