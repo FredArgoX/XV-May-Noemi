@@ -752,14 +752,23 @@ svg{
 #border_bottom_container{
     display: block;
     position: fixed;
-    bottom: -10px;
-    left: -20px;
-    width: 100%;
+    /*width: 100%;*/
+    /*border: 1px solid crimson;*/
+    /*height: 100%;*/
+    top: 0px;
+    right: -5px;
+    left: -12px;
+    bottom: 0px;
+    width: auto;
+    height: auto;
+
     /*border: 1px solid crimson;*/
 
 }
 .border_bottom{
-    width: 110%;
+    width: 100%;
+    /*border: 1px solid chartreuse;*/
+    height: 100%;
 }
 /*
 *{
