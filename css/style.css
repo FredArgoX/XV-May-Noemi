@@ -719,14 +719,16 @@ svg{
     border-radius: var(--general-border-radius);
     height: 100%;
     width: 100%;
+    
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(4px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    
     border-top-left-radius: 100% 50%;
     border-bottom-right-radius: 100% 50%;
 }
 #XV{
-    width: 20rem;
+    width: 15rem;
 }
 /*V*/
 .xv01{
@@ -750,15 +752,20 @@ svg{
 #border_bottom_container{
     display: block;
     position: fixed;
-    bottom: -5px;
-    left: -12px;
+    bottom: -10px;
+    left: -20px;
     width: 100%;
     /*border: 1px solid crimson;*/
 
 }
 .border_bottom{
-    width: 100%;
+    width: 110%;
 }
+/*
+*{
+    border: 1px solid crimson;
+}
+*/
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /* Slider 02 */
