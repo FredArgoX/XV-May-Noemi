@@ -746,6 +746,19 @@ svg{
     stroke-width: 5;
     stroke: #2F2F49;
 }
+
+#border_bottom_container{
+    display: block;
+    position: fixed;
+    bottom: -5px;
+    left: -12px;
+    width: 100%;
+    /*border: 1px solid crimson;*/
+
+}
+.border_bottom{
+    width: 100%;
+}
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /* Slider 02 */
