@@ -448,14 +448,6 @@ svg{
     z-index: -1;
 }
 
-
-
-
-
-
-
-
-
 .fusaka_gold{
     position: fixed;
     height: calc(100% - 12px);
@@ -557,9 +549,6 @@ svg{
     z-index: -9;
 }
 
-
-
-
 @keyframes goldFlow {
     0% {
         background-position: 0% 100%;
@@ -582,11 +571,6 @@ svg{
         background-position: 0% 100%;
     }
 }
-
-
-
-
-
 
 #XV{
     width: 15rem;
@@ -770,9 +754,10 @@ svg{
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    /*
     border-top-left-radius: calc(var(--general-border-radius)*18);
     border-top-right-radius: calc(var(--general-border-radius)*18);
-
+    */
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
@@ -835,8 +820,9 @@ svg{
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    /*
     border-radius: calc(var(--general-border-radius)*18);
-    
+    */
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
@@ -922,8 +908,9 @@ th:nth-child(1){
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    /*
     border-radius: calc(var(--general-border-radius)*18);
-    
+    */
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
@@ -963,9 +950,10 @@ th:nth-child(1){
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    /*
     border-top-left-radius: calc(var(--general-border-radius)*18);
     border-top-right-radius: calc(var(--general-border-radius)*18);
-    
+    */    
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
@@ -1008,8 +996,9 @@ th:nth-child(1){
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    /*
     border-radius: calc(var(--general-border-radius)*18);
-    
+    */
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
