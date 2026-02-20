@@ -107,7 +107,7 @@ body{
     left: -8px;
     width: 200px;
     height: auto;
-    z-index: 10;
+    z-index: 2;
 }
 .svg_xt02{
     background: none;
@@ -117,7 +117,7 @@ body{
     width: 200px;
     height: auto;
     rotate: 240deg;
-    z-index: 10;
+    z-index: 2;
 }
 /*__________________________________________________________________________________________*/
 /* branch */
@@ -442,16 +442,6 @@ svg{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 #XV{
     width: 15rem;
 }
@@ -514,46 +504,6 @@ svg{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /* Slider 02 */
@@ -565,6 +515,8 @@ svg{
     padding: var(--general-padding);
     padding-block-start: 0px;
     padding-block-end: 0px;
+    position: relative;
+    z-index: 10 !important;
 }
 #s02x{
     display: flex;
@@ -1279,224 +1231,10 @@ th:nth-child(1){
 
 
 
-/* //////////////////////////////////////////////////////////////////////////////////////// */
-/*__________________________________________________________________________________________*/
-/* Slider Containing SVG ICONS */
-#s02-remove{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: var(--general-padding);
-    padding-block-start: 0px;
-    padding-block-end: 0px;
-}
-#s02x-remove{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    border-radius: var(--general-border-radius);
-    height: 100%;
-    width: 100%;
-    background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(16px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    padding: var(--general-padding);
-}
+
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /* SVG ICONS specific */
-/*__________________________________________________________________________________________*/
-/* Reception icon */
-.ic_reception{
-    height: 100px;
-}
-/* Reception icon parts */
-.ic_reception_01,
-.ic_reception_02,
-.ic_reception_03,
-.ic_reception_04,
-.ic_reception_05,
-.ic_reception_06,
-.ic_reception_07,
-.ic_reception_08,
-.ic_reception_09,
-.ic_reception_10,
-.ic_reception_11,
-.ic_reception_12,
-.ic_reception_13,
-.ic_reception_14,
-.ic_reception_15,
-.ic_reception_16,
-.ic_reception_17,
-.ic_reception_18,
-.ic_reception_19,
-.ic_reception_20,
-.ic_reception_21,
-.ic_reception_22,
-.ic_reception_23,
-.ic_reception_24{
-    fill: blue;
-    fill-opacity: 1.0;
-}
-/*door handle*/
-.ic_reception_01,
-.ic_reception_02{
-    fill: var(--color-base-icon-stroke);
-}
-/*letters welcome*/
-.ic_reception_03,
-.ic_reception_04,
-.ic_reception_05,
-.ic_reception_06,
-.ic_reception_07,
-.ic_reception_08,
-.ic_reception_09,
-.ic_reception_10,
-.ic_reception_11,
-.ic_reception_12,
-.ic_reception_13
-{
-    fill: var(--color-base-icon-pink01);
-}
-/*main contour*/
-.ic_reception_14{
-    fill: var(--color-base-icon-stroke);
-}
-/*XV - V*/
-.ic_reception_15{
-    fill: var(--color-base-icon-pink01);
-}
-/*XV - X*/
-.ic_reception_16{
-    fill: var(--color-base-icon-stroke);
-}
-/*Noemi letters*/
-.ic_reception_17,
-.ic_reception_18,
-.ic_reception_19,
-.ic_reception_20,
-.ic_reception_21
-{
-    fill: var(--color-base-icon-pink01);
-    stroke: var(--color-base-icon-pink01);
-}
-/*May letters*/
-.ic_reception_22,
-.ic_reception_23,
-.ic_reception_24{
-    fill: var(--color-base-icon-stroke);
-    stroke: var(--color-base-icon-stroke);
-}
-/*__________________________________________________________________________________________*/
-/* Calendar icon */
-.ic_calendar{
-    width: 100px;
-}
-/* Calendar icon parts */
-.ic_calendar_01,
-.ic_calendar_02,
-.ic_calendar_03,
-.ic_calendar_04,
-.ic_calendar_05,
-.ic_calendar_06,
-.ic_calendar_07,
-.ic_calendar_08,
-.ic_calendar_09,
-.ic_calendar_10,
-.ic_calendar_11
-{
-    /*fill: blue;*/
-    fill-opacity: 1.0;
-}
-/*main contour*/
-.ic_calendar_01{
-    fill: var(--color-base-icon-stroke);
-}
-/*table*/
-.ic_calendar_02{
-    fill: var(--color-base-icon-stroke);
-}
-/*party day*/
-.ic_calendar_03{
-    fill: var(--color-base-icon-pink01);
-}
-/*calendar days*/
-.ic_calendar_04,
-.ic_calendar_05,
-.ic_calendar_06,
-.ic_calendar_07,
-.ic_calendar_08,
-.ic_calendar_09,
-.ic_calendar_10
-{
-    fill: var(--color-base-icon-cream);
-}
-/*calendar handle*/
-.ic_calendar_11{
-    fill: var(--color-base-icon-stroke);
-}
-/*__________________________________________________________________________________________*/
-/* Girls icon */
-.ic_girls{
-    height: 100px;
-}
-/* Girls icon parts */
-.ic_girls_01,
-.ic_girls_02,
-.ic_girls_03,
-.ic_girls_04
-{
-    /*fill: blue;*/
-    fill-opacity: 1.0;
-}
-/*main contour*/
-.ic_girls_01{
-    fill: var(--color-base-icon-stroke);
-}
-/*right dress*/
-.ic_girls_02{
-    fill: var(--color-base-icon-pink01);
-}
-/*left dress*/
-.ic_girls_03,
-.ic_girls_04
-{
-    fill: var(--color-base-icon-pink01);
-}
-/*__________________________________________________________________________________________*/
-/* Dance icon */
-.ic_dance{
-    height: 100px;
-}
-/* Dance icon parts */
-.ic_dance_01,
-.ic_dance_02,
-.ic_dance_03,
-.ic_dance_04,
-.ic_dance_05
-{
-    /*fill: blue;*/
-    fill-opacity: 1.0;
-}
-/*main contour*/
-.ic_dance_01{
-    fill: var(--color-base-icon-stroke);
-}
-/*man's coat*/
-.ic_dance_02,
-.ic_dance_05
-{
-    fill: var(--color-base-icon-cream);
-}
-/*woman's dress*/
-.ic_dance_03,
-.ic_dance_04
-{
-    fill: var(--color-base-icon-pink01);
-}
 /*__________________________________________________________________________________________*/
 /* RSVP icon */
 .ic_rsvp{
@@ -1538,139 +1276,3 @@ th:nth-child(1){
     fill: var(--color-base-icon-stroke);
 }
 /*__________________________________________________________________________________________*/
-/* Food icon */
-.ic_food{
-    width: 100px;
-}
-/* Food icon parts */
-.ic_food_01,
-.ic_food_02,
-.ic_food_03,
-.ic_food_04,
-.ic_food_05,
-.ic_food_06,
-.ic_food_07,
-.ic_food_08,
-.ic_food_09,
-.ic_food_10
-{
-    /*fill: blue;*/
-    fill-opacity: 1.0;
-}
-/*main contour*/
-.ic_food_01,
-.ic_food_02,
-.ic_food_04
-{
-    fill: var(--color-base-icon-stroke);
-}
-/*bread*/
-.ic_food_03{
-    fill: var(--color-base-icon-cream02);
-}
-/*food*/
-.ic_food_05,
-.ic_food_06,
-.ic_food_07,
-.ic_food_10
-{
-    fill: var(--color-base-icon-brown02);
-}
-/*leaves*/
-.ic_food_08,
-.ic_food_09
-{
-    fill: var(--color-base-icon-green01);
-}
-/*__________________________________________________________________________________________*/
-/* Brindis icon */
-.ic_brindis{
-    height: 100px;
-}
-/* Brindis icon parts */
-.ic_brindis_01,
-.ic_brindis_02,
-.ic_brindis_03
-{
-    /*fill: blue;*/
-    fill-opacity: 1.0;
-}
-/*main contour*/
-.ic_brindis_03{
-    fill: var(--color-base-icon-stroke);
-}
-.ic_brindis_01,
-.ic_brindis_02
-{
-    fill: var(--color-base-icon-cream02);
-}
-/*__________________________________________________________________________________________*/
-/* Dress code icon */
-.ic_dresscode{
-    height: 100px;
-}
-/* Dress code icon parts */
-.ic_brindis_01
-{
-    /*fill: blue;*/
-    fill-opacity: 1.0;
-}
-.ic_dresscode_01{
-    fill: var(--color-base-icon-stroke);
-}
-/*__________________________________________________________________________________________*/
-/* Present icon */
-.ic_present{
-    height: 100px;
-}
-/* Presnet icon parts */
-.ic_present_01,
-.ic_present_02,
-.ic_present_03,
-.ic_present_04,
-.ic_present_05,
-.ic_present_06,
-.ic_present_07,
-.ic_present_08,
-.ic_present_09,
-.ic_present_10,
-.ic_present_11,
-.ic_present_12,
-.ic_present_13,
-.ic_present_14,
-.ic_present_15
-{
-    /*fill: blue;*/
-    fill-opacity: 1.0;
-}
-/*main_contour*/
-.ic_present_01{
-    fill: var(--color-base-icon-stroke);
-}
-/*box*/
-.ic_present_02,
-.ic_present_03,
-.ic_present_05,
-.ic_present_06,
-.ic_present_14,
-.ic_present_15
-{
-    fill: var(--color-base-icon-cream02);
-}
-/*bun*/
-.ic_present_04,
-.ic_present_07,
-.ic_present_08,
-.ic_present_09,
-.ic_present_10,
-.ic_present_11,
-.ic_present_12,
-.ic_present_13
-{
-    fill: var(--color-base-icon-pink01);
-}
-/*__________________________________________________________________________________________*/
-/* Piñata icon */
-.ic_pinata{
-    height: 100px;
-}
