@@ -369,6 +369,17 @@ svg{
 
     /*border: 2px solid crimson;*/
 }
+#XV_container{
+    padding: var(--general-padding);
+    border-radius: var(--general-border-radius);
+    width: 70%;
+    height: 70%;
+    border-top-left-radius: 100% 50%;
+    border-bottom-right-radius: 100% 50%;
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
 #XV{
     width: 15rem;
 }
@@ -1591,6 +1602,3 @@ th:nth-child(1){
 .ic_pinata{
     height: 100px;
 }
-
-
-
