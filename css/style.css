@@ -471,6 +471,8 @@ svg{
     content: "";
     position: absolute;
     padding: 6px;
+    padding-block-start: 0px;
+    padding-block-end: px;
     background: radial-gradient(
         circle at center,
         rgba(0, 0, 0, 0.0),
