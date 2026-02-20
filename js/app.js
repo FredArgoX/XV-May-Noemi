@@ -46,3 +46,12 @@ const container = document.getElementById('itinerario_table_container');
 if (container) {
     observer.observe(container);
 }
+
+
+
+
+
+
+
+
+
