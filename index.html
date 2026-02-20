@@ -1303,7 +1303,7 @@
                 const svgXt01 = document.querySelector('.svg_xt01');
                 const svgXt02 = document.querySelector('.svg_xt02');
 
-                if (this.activeIndex === 0) { // First slide (id="s01")
+                if (this.activeIndex === 0 || this.activeIndex === 7) { // First slide (id="s01")
                 svgXt01.style.zIndex = '10'; // On top (adjust higher if needed based on other elements)
                 svgXt02.style.zIndex = '10';
                 } else { // All other slides
