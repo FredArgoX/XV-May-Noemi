@@ -298,8 +298,23 @@ body {
 }
 .swiper-pagination{
     /*background-color: #ec2861;*/
+    /*
     left: 0.35rem !important;
     width: min-content;
+    */
+    /*background: #063499;*/
+    width: var(--general-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0rem !important;
+    height: 200px;
+    border-top-left-radius: 100% 20%;
+    border-bottom-left-radius: 100% 20%;
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 /* EVERY bullet (base styles) */
 .swiper-pagination-bullet {
@@ -341,6 +356,128 @@ svg{
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
+.fusaka_gold{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -3;
+    border-radius: var(--general-border-radius);
+    border-top-left-radius: 100% 50%;
+    border-bottom-right-radius: 100% 50%;
+}
+#fg01{
+    transform: rotate(-10deg);
+}
+#fg02{
+    transform: rotate(-20deg);
+}
+#fg03{
+    transform: rotate(-30deg);
+}
+#fg04{
+    transform: rotate(-40deg);
+}
+#fg05{
+    transform: rotate(-50deg);
+}
+#fg06{
+    transform: rotate(-60deg);
+}
+#fg07{
+    transform: rotate(-70deg);
+}
+#fg08{
+    transform: rotate(-80deg);
+}
+#fg09{
+    transform: rotate(-90deg);
+}
+#fg10{
+    transform: rotate(-100deg);
+}
+#fg11{
+    transform: rotate(-110deg);
+}
+#fg12{
+    transform: rotate(-120deg);
+}
+#fg13{
+    transform: rotate(-130deg);
+}
+#fg14{
+    transform: rotate(-140deg);
+}
+#fg15{
+    transform: rotate(-150deg);
+}
+#fg16{
+    transform: rotate(-160deg);
+}
+#fg17{
+    transform: rotate(-170deg);
+}
+#fg18{
+    transform: rotate(-180deg);
+}
+
+
+#fg01::before{
+    animation-delay: 1s;
+}
+#fg02::before{
+    animation-delay: 2s;
+}
+#fg03::before{
+    animation-delay: 3s;
+}
+#fg04::before{
+    animation-delay: 4s;
+}
+#fg05::before{
+    animation-delay: 5s;
+}
+#fg06::before{
+    animation-delay: 6s;
+}
+#fg07::before{
+    animation-delay: 7s;
+}
+#fg08::before{
+    animation-delay: 8s;
+}
+#fg09::before{
+    animation-delay: 9s;
+}
+#fg10::before{
+    animation-delay: 10s;
+}
+#fg11::before{
+    animation-delay: 11s;
+}
+#fg12::before{
+    animation-delay: 12s;
+}
+#fg13::before{
+    animation-delay: 13s;
+}
+#fg14::before{
+    animation-delay: 14s;
+}
+#fg15::before{
+    animation-delay: 15s;
+}
+#fg16::before{
+    animation-delay: 16s;
+}
+#fg17::before{
+    animation-delay: 17s;
+}
+#fg18::before{
+    animation-delay: 18s;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+/*__________________________________________________________________________________________*/
+
 /* Slider 01 */
 #s01{
     display: flex;
@@ -381,7 +518,9 @@ svg{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
-.box::before{
+.box::before,
+.fusaka_gold::before
+{
     border-radius: var(--general-border-radius);
     border-top-left-radius: 100% 50%;
     border-bottom-right-radius: 100% 50%;
@@ -427,6 +566,9 @@ svg{
         mask-composite: exclude;
     z-index: -1;
 }
+.fusaka_gold::before{
+    inset: 0;
+}
 
 @keyframes goldFlow {
     0% {
@@ -439,6 +581,13 @@ svg{
         background-position: 100% 0%;
     }
 }
+
+
+
+
+
+
+
 
 #XV{
     width: 15rem;
