@@ -516,7 +516,6 @@ svg{
     padding-block-start: 0px;
     padding-block-end: 0px;
     position: relative;
-    z-index: 10 !important;
 }
 #s02x{
     display: flex;
@@ -534,6 +533,7 @@ svg{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     
     padding: var(--general-padding);
+
 }
 #date_container{
     display: flex;
