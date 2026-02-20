@@ -409,7 +409,7 @@ svg{
     );
 
     background-size: 200% 200%;
-    animation: goldFlow 20s linear infinite;
+    animation: goldFlow 10s linear infinite;
 
     -webkit-mask:
         linear-gradient(#000 0 0) content-box,
@@ -422,11 +422,20 @@ svg{
 
 @keyframes goldFlow {
     0% { background-position: 100% 0%; }
+    25% { background-position: 50% 50%; }
     50% { background-position: 0% 100%; }
+    75% { background-position: 50% 50%;}
     100% { background-position: 100% 0%; }
 }
 
-
+@keyframes blurPulse {
+0% {
+    backdrop-filter: blur(1px);
+}
+100% {
+    backdrop-filter: blur(60px);
+}
+}
 
 
 
