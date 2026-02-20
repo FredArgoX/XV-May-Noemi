@@ -1167,13 +1167,26 @@ th:nth-child(1){
 
 
 
+/*
 
-
-
-
+#FARGOX_container{
+    --width: 350px; 
+    width: var(--width);
+    height: calc(var(--width) / sin(60deg));
+    background-color: #3498db; 
+    clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+    );
+}
+*/
 .FARGOX {
-    width: 300px; /* Adjust size as needed */
-    height: 300px;
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
 }
 
 /* Set variables and initial dash properties for strokes */
