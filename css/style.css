@@ -421,7 +421,7 @@ svg{
         rgba(0, 0, 0, 0.0)
     );
     background-size: 500% 500%;
-    animation: goldFlow 10s linear infinite;
+    animation: goldFlow 10s ease-in-out infinite alternate;
     -webkit-mask:
         linear-gradient(#000 0 0) content-box,
         linear-gradient(#000 0 0);
