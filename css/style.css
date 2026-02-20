@@ -381,8 +381,6 @@ svg{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
-
-
 .box::before{
     border-radius: var(--general-border-radius);
     border-top-left-radius: 100% 50%;
@@ -486,7 +484,7 @@ svg{
 }
 .stain_fusaka > path{
     opacity: 1.0;
-    animation: color-shift 10s infinite linear;
+    animation: color-shift 3s infinite linear;
     stroke-width: 0.3;
 }
 @keyframes color-shift{
