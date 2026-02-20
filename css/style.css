@@ -424,6 +424,7 @@ svg{
         #e0bb7f,
         #c19c60,
         #8f6a2e, /* Central point */
+        #8f6a2e, /* Central point */
         #c19c60,
         #e0bb7f,
         #f3ce92,
@@ -457,11 +458,14 @@ svg{
 
 .fusaka_gold{
     position: fixed;
-    height: 100vh;
+    height: calc(100% - 12px);
     width: 100vw;
     z-index: -1;
 }
-.fusaka_gold::before
+#fg01::before,
+#fg03::before,
+#fg05::before,
+#fg07::before
 {
     inset: 0;
     left: var(--general-margin);
@@ -472,13 +476,54 @@ svg{
     position: absolute;
     padding: 6px;
     padding-block-start: 0px;
-    padding-block-end: px;
+    padding-block-end: 0px;
     background: radial-gradient(
         circle at center,
         rgba(0, 0, 0, 0.0),
         rgba(0, 0, 0, 0.0),
         rgba(0, 0, 0, 0.0),
         rgba(0, 0, 0, 0.0),
+        #ffda9e,
+        #f3ce92,
+        #e0bb7f,
+        #c19c60,
+        #8f6a2e, /* Central point */
+        #8f6a2e, /* Central point */
+        #c19c60,
+        #e0bb7f,
+        #f3ce92,
+        #ffda9e,
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0)
+    );
+    background-size: 500% 500%;
+    animation: goldFlow 9s ease-in-out infinite alternate;
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    z-index: -9;
+}
+#fg02::before,
+#fg04::before,
+#fg06::before,
+#fg08::before
+{
+    inset: 0;
+    left: var(--general-margin);
+    right: var(--general-margin);
+    inset-block-start: -6px;
+    inset-block-end: -6px;
+    content: "";
+    position: absolute;
+    padding: 6px;
+    padding-block-start: 0px;
+    padding-block-end: 0px;
+    background: radial-gradient(
+        circle at center,
         #ffda9e,
         #f3ce92,
         #e0bb7f,
@@ -491,10 +536,19 @@ svg{
         rgba(0, 0, 0, 0.0),
         rgba(0, 0, 0, 0.0),
         rgba(0, 0, 0, 0.0),
-        rgba(0, 0, 0, 0.0)
+        rgba(0, 0, 0, 0.0),
+        #ffda9e,
+        #f3ce92,
+        #e0bb7f,
+        #c19c60,
+        #8f6a2e, /* Central point */
+        #c19c60,
+        #e0bb7f,
+        #f3ce92,
+        #ffda9e
     );
     background-size: 500% 500%;
-    animation: goldFlow 10s ease-in-out infinite alternate;
+    animation: goldFlow 11s ease-in-out infinite alternate;
     -webkit-mask:
         linear-gradient(#000 0 0) content-box,
         linear-gradient(#000 0 0);
