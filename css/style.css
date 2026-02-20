@@ -355,139 +355,7 @@ svg{
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
-.fusaka_gold{
-    position: fixed;
-    height: 100vh;
-    width: 0vw;
-}
-#fg01{
-    /*border: 2px solid chartreuse;*/
-    z-index: 10;
-    left: var(--general-margin);
-}
-#fg01::before{
-    animation-delay: 3s;
-}
-#fg02{
-    /*border: 2px solid chartreuse;*/
-    z-index: 10;
-    right: var(--general-margin);
-}
-#fg02::before{
-    animation-delay: 3s;
-}
 
-/*
-#fg01{
-    transform: rotate(-10deg);
-}
-#fg02{
-    transform: rotate(-20deg);
-}
-#fg03{
-    transform: rotate(-30deg);
-}
-#fg04{
-    transform: rotate(-40deg);
-}
-#fg05{
-    transform: rotate(-50deg);
-}
-#fg06{
-    transform: rotate(-60deg);
-}
-#fg07{
-    transform: rotate(-70deg);
-}
-#fg08{
-    transform: rotate(-80deg);
-}
-#fg09{
-    transform: rotate(-90deg);
-}
-#fg10{
-    transform: rotate(-100deg);
-}
-#fg11{
-    transform: rotate(-110deg);
-}
-#fg12{
-    transform: rotate(-120deg);
-}
-#fg13{
-    transform: rotate(-130deg);
-}
-#fg14{
-    transform: rotate(-140deg);
-}
-#fg15{
-    transform: rotate(-150deg);
-}
-#fg16{
-    transform: rotate(-160deg);
-}
-#fg17{
-    transform: rotate(-170deg);
-}
-#fg18{
-    transform: rotate(-180deg);
-}
-*/
-
-
-/*
-#fg02::before{
-    animation-delay: 2s;
-}
-#fg03::before{
-    animation-delay: 3s;
-}
-#fg04::before{
-    animation-delay: 4s;
-}
-#fg05::before{
-    animation-delay: 5s;
-}
-#fg06::before{
-    animation-delay: 6s;
-}
-#fg07::before{
-    animation-delay: 7s;
-}
-#fg08::before{
-    animation-delay: 8s;
-}
-#fg09::before{
-    animation-delay: 9s;
-}
-#fg10::before{
-    animation-delay: 10s;
-}
-#fg11::before{
-    animation-delay: 11s;
-}
-#fg12::before{
-    animation-delay: 12s;
-}
-#fg13::before{
-    animation-delay: 13s;
-}
-#fg14::before{
-    animation-delay: 14s;
-}
-#fg15::before{
-    animation-delay: 15s;
-}
-#fg16::before{
-    animation-delay: 16s;
-}
-#fg17::before{
-    animation-delay: 17s;
-}
-#fg18::before{
-    animation-delay: 18s;
-}
-*/
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 
@@ -531,8 +399,7 @@ svg{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
-.box::before,
-.fusaka_gold::before
+.box::before
 {
     border-radius: var(--general-border-radius);
     border-top-left-radius: 100% 50%;
@@ -579,10 +446,64 @@ svg{
         mask-composite: exclude;
     z-index: -1;
 }
-.fusaka_gold::before{
-    padding: 3px;
-    animation: goldFlow 5s ease-in-out infinite alternate;
+
+
+
+
+
+
+
+
+
+.fusaka_gold{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
 }
+.fusaka_gold::before
+{
+    inset: 0;
+    left: var(--general-margin);
+    right: var(--general-margin);
+    inset-block-start: -6px;
+    inset-block-end: -6px;
+    content: "";
+    position: absolute;
+    padding: 6px;
+    background: radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0),
+        #ffda9e,
+        #f3ce92,
+        #e0bb7f,
+        #c19c60,
+        #8f6a2e, /* Central point */
+        #c19c60,
+        #e0bb7f,
+        #f3ce92,
+        #ffda9e,
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.0)
+    );
+    background-size: 500% 500%;
+    animation: goldFlow 10s ease-in-out infinite alternate;
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    z-index: 9;
+}
+
+
+
+
 @keyframes goldFlow {
     0% {
         background-position: 0% 100%;
@@ -605,7 +526,6 @@ svg{
         background-position: 0% 100%;
     }
 }
-
 
 
 
@@ -696,9 +616,10 @@ svg{
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
+    /*
     border-top-left-radius: 50%;
     border-bottom-right-radius: calc(var(--general-border-radius)*18);
-    
+    */
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
