@@ -956,7 +956,16 @@
                 <div class="swiper-slide" id="s02">
                     <div id="s02x">
                         <!--__________________________________________________________________________________________-->
+                        <div class="ileft">
+                            <img class="dleft" src="./assets/svg_icons/left.svg" alt="">
+                        </div>
+                        <div class="iright">
+                            <img class="dright" src="./assets/svg_icons/right.svg" alt="">
+                        </div>
+                        <!--__________________________________________________________________________________________-->
+                        <!--
                         <div class="fusaka_gold" id="fg02"></div>
+                        -->
                         <!--__________________________________________________________________________________________-->
                         <div class="svg_container ic_calendar_container">
                             <svg class="ic_calendar" width="1919" height="2009" viewBox="0 0 1919 2009" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1319,9 +1328,13 @@
                 if (this.activeIndex === 0 || this.activeIndex === 7) { // First slide (id="s01")
                 svgXt01.style.zIndex = '10'; // On top (adjust higher if needed based on other elements)
                 svgXt02.style.zIndex = '10';
+                svgXt01.style.opacity = 1.0;
+                svgXt02.style.opacity = 1.0;
                 } else { // All other slides
                 svgXt01.style.zIndex = '-1'; // Behind everything (adjust lower if needed)
                 svgXt02.style.zIndex = '-1';
+                svgXt01.style.opacity = 0.4;
+                svgXt02.style.opacity = 0.4;
                 }
             });
 
