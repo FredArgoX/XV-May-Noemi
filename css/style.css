@@ -947,77 +947,6 @@ svg{
     width: 200px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
 /* Slider 03 */
@@ -1034,15 +963,10 @@ svg{
     padding: 0px;
     position: relative;
     /*border: 2px solid crimson;*/
-    background: linear-gradient(
-        -60deg,
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 154, 213, 0.2),
-        rgba(255, 110, 199, 0.3),
-        rgba(255, 79, 163, 0.3), /* Central line */
-        rgba(255, 110, 199, 0.3),
-        rgba(255, 154, 213, 0.2),
-        rgba(255, 255, 255, 0.1)
+    background: radial-gradient(
+        rgba(255, 154, 213, 0.4),
+        rgba(255, 110, 199, 0.1),
+        rgba(255, 79, 163, 0.4)
     );
 }
 #s03x{
@@ -1140,15 +1064,10 @@ svg{
     padding: 0px;
     position: relative;
     /*border: 2px solid crimson;*/
-    background: linear-gradient(
-        60deg,
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 154, 213, 0.2),
-        rgba(255, 110, 199, 0.3),
-        rgba(255, 79, 163, 0.3), /* Central line */
-        rgba(255, 110, 199, 0.3),
-        rgba(255, 154, 213, 0.2),
-        rgba(255, 255, 255, 0.1)
+    background: radial-gradient(
+        rgba(255, 154, 213, 0.4),
+        rgba(255, 110, 199, 0.1),
+        rgba(255, 79, 163, 0.4)
     );
 }
 #s04x{
@@ -1336,15 +1255,10 @@ th:nth-child(1){
     padding: 0px;
     position: relative;
     /*border: 2px solid crimson;*/
-    background: linear-gradient(
-        60deg,
-        rgba(255, 255, 255, 0.1),
-        rgba(255, 154, 213, 0.2),
-        rgba(255, 110, 199, 0.3),
-        rgba(255, 79, 163, 0.3), /* Central line */
-        rgba(255, 110, 199, 0.3),
-        rgba(255, 154, 213, 0.2),
-        rgba(255, 255, 255, 0.1)
+    background: radial-gradient(
+        rgba(255, 154, 213, 0.4),
+        rgba(255, 110, 199, 0.1),
+        rgba(255, 79, 163, 0.4)
     );
 }
 #s06x{
@@ -1502,11 +1416,22 @@ th:nth-child(1){
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    /*
     padding: var(--general-padding);
     padding-block-start: 0px;
     padding-block-end: 0px;
+    */
+    padding: 0px;
+    position: relative;
+    /*border: 2px solid crimson;*/
+    background: radial-gradient(
+        rgba(255, 154, 213, 0.4),
+        rgba(255, 110, 199, 0.1),
+        rgba(255, 79, 163, 0.4)
+    );
 }
 #s08x{
+    /*border: 2px solid chocolate;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1515,8 +1440,12 @@ th:nth-child(1){
     height: 100%;
     width: 100%;
     /*
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: calc(var(--general-border-radius)*18);
+    */
     background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(16px);
+    /*
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     */
     padding: var(--general-padding);
