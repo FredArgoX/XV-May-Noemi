@@ -1368,9 +1368,9 @@ th:nth-child(1){
     position: relative;
     /*border: 2px solid crimson;*/
     background: radial-gradient(
-        rgba(255, 154, 213, 0.1),
-        rgba(255, 110, 199, 0.1),
-        rgba(255, 79, 163, 0.2)
+        rgba(255, 154, 213, 0.2),
+        rgba(255, 110, 199, 0.2),
+        rgba(255, 79, 163, 0.4)
     );
 }
 #s07x{
