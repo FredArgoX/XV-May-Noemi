@@ -531,11 +531,13 @@ svg{
     /*border-radius: var(--general-border-radius);*/
     border-top-left-radius: 10% 10%;
     border-bottom-right-radius: 100% 100%;
-    inset: 0;
+    /*
     left: var(--general-margin);
     right: var(--general-margin);
     inset-block-start: -6px;
     inset-block-end: -6px;
+    */
+    border: 2px solid crimson;
     content: "";
     position: absolute;
     padding: 6px;
