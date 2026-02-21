@@ -403,6 +403,25 @@ svg{
     );
 }
 #s01x{
+    /*border: 2px solid chocolate;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /*border-radius: var(--general-border-radius);*/
+    height: 100%;
+    width: 100%;
+    /*
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: calc(var(--general-border-radius)*18);
+    */
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(16px);
+    /*
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    */
+    padding: var(--general-padding);
+    /*
     display: flex;
     flex-direction: column;
     align-items: center;
