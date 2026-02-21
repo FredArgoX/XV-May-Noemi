@@ -47,6 +47,17 @@ body.loaded {
     --general-margin: 15px;
     --general-padding: 15px;
     --general-border-radius: 6px;
+
+
+    /* Colors */
+    --color-a: #191919;
+    --color-b: #FFFFFF;
+    --color-c: #1D4ED8;
+    --color-d: #606060;
+    --color-e: #272727;
+    --color-f: #a0a0a0;
+    --color-g: #cc0000;
+    --color-h: #0f0f0f;
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /*__________________________________________________________________________________________*/
@@ -1585,7 +1596,7 @@ th{
         rgba(255, 110, 199, 0.1),
         rgba(255, 79, 163, 0.4)
     );
-    border: 2px solid crimson;
+    /*border: 2px solid crimson;*/
 }
 #s08x{
     /*border: 2px solid chocolate;*/
@@ -1607,19 +1618,19 @@ th{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     */
     padding: var(--general-padding);
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 #FARGOX_container{
-    border: 2px solid chartreuse;
+    /*border: 2px solid chartreuse;*/
 }
 #author{
-    border: 2px solid salmon;
+    /*border: 2px solid salmon;*/
     width: 200px;
     padding: var(--general-padding);
 
 }
 #social{
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     width: 200px;
     padding: var(--general-padding);
 }
@@ -1959,33 +1970,38 @@ th{
 
 
 
-
-
-/* Basic styling for social icons */
-.social-icons {
-    display: flex; /* Align icons horizontally */
-    gap: 15px; /* Space between icons */
-    justify-content: center; /* Center them */
-    margin: 20px 0; /* Add some vertical spacing */
+.social-container{
+    display: flex;
+    flex-direction: row;
+    gap: calc(var(--common-gap) - 18px);
 }
-
-.social-icons a {
-    color: #333; /* Default icon color */
-    font-size: 10px; /* Icon size */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+.social-icon{
+    /* Colors */
+    --color-a: #191919;
+    --color-b: #FFFFFF;
+    --color-c: #1D4ED8;
+    --color-d: #606060;
+    --color-e: #272727;
+    --color-f: #a0a0a0;
+    --color-g: #cc0000;
+    --color-h: #0f0f0f;
+    /*background-color: var(--color-a);*/
+    color: var(--color-a);
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
 }
-
-.social-icons a:hover {
-    color: #25D366; /* WhatsApp green on hover, or customize per icon */
-    transform: scale(1.1); /* Slight zoom on hover */
-}
-
-/* Specific styles for each icon (optional) */
-.social-icons .ri-whatsapp-line {
-    color: #25D366; /* WhatsApp green */
-}
-
-.social-icons .ri-google-line {
-    color: #DB4437; /* Google red */
+.social-icon:hover,
+.social-icon:focus{
+    /* Colors */
+    --color-a: #191919;
+    --color-b: #FFFFFF;
+    --color-c: #1D4ED8;
+    --color-d: #606060;
+    --color-e: #272727;
+    --color-f: #a0a0a0;
+    --color-g: #cc0000;
+    --color-h: #0f0f0f;
+    /*background-color: var(--color-g);*/
+    color: var(--color-d);
 }
