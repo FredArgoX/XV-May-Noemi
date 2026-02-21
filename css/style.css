@@ -376,13 +376,31 @@ svg{
 
 /* Slider 01 */
 #s01{
+    /*
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     padding: var(--general-padding);
-    /*border: 2px solid crimson;*/
     padding: var(--general-padding);
+    */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /*
+    padding: var(--general-padding);
+    padding-block-start: 0px;
+    padding-block-end: 0px;
+    */
+    padding: 0px;
+    position: relative;
+    /*border: 2px solid crimson;*/
+    background: radial-gradient(
+        rgba(255, 154, 213, 0.4),
+        rgba(255, 110, 199, 0.1),
+        rgba(255, 79, 163, 0.4)
+    );
 }
 #s01x{
     display: flex;
@@ -396,17 +414,19 @@ svg{
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(4px);
     */
+    /*
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     border-top-left-radius: 100% 50%;
     border-bottom-right-radius: 100% 50%;
-
+    */
     /*border: 2px solid crimson;*/
-
+    /*
     background: radial-gradient(
         rgba(255, 154, 213, 0.3),
         rgba(255, 110, 199, 0.4),
         rgba(255, 79, 163, 0.8)
     );
+    */
 }
 #XV_container{
     padding: var(--general-padding);
@@ -415,10 +435,17 @@ svg{
     height: 70%;
     border-top-left-radius: 100% 50%;
     border-bottom-right-radius: 100% 50%;
+    /*
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(0px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    */
 }
+/*
+*{
+    border: 1px solid gray;
+}
+*/
 .box::before
 {
     border-radius: var(--general-border-radius);
@@ -426,8 +453,7 @@ svg{
     border-bottom-right-radius: 100% 50%;
     content: "";
     position: absolute;
-    inset: 0;
-    inset: -12%;
+    inset: calc(5 * var(--general-margin));
     padding: 6px;
     background: radial-gradient(
         circle at center,
