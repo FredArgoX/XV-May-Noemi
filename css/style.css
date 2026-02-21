@@ -1156,10 +1156,12 @@ th, td {
 }
 th:nth-child(1){
     width: min-content;
+    padding-inline-start: var(--general-padding);
 }
 th:nth-child(2){
     width: max-content;
     text-align: justify;
+    padding-inline-end: var(--general-padding);
 }
 /*
 th:nth-child(1){
@@ -1272,8 +1274,6 @@ table, tr {
 th{
     text-align: justify;
     /*border: 1px solid crimson;*/
-    padding-block-start: calc(0.5 * (var(--general-padding)));
-    padding-block-end: calc(0.5 * (var(--general-padding)));
     height: 100%;
     width: 100%;
 }
