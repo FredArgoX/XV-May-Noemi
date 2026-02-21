@@ -1971,7 +1971,7 @@ th{
 
 .social-icons a {
     color: #333; /* Default icon color */
-    font-size: 48px; /* Icon size */
+    font-size: 10px; /* Icon size */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
 }
