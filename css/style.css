@@ -1585,13 +1585,15 @@ th{
         rgba(255, 110, 199, 0.1),
         rgba(255, 79, 163, 0.4)
     );
+    border: 2px solid crimson;
 }
 #s08x{
     /*border: 2px solid chocolate;*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: var(--general-gap);
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
@@ -1604,6 +1606,21 @@ th{
     /*
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     */
+    padding: var(--general-padding);
+    border: 2px solid black;
+}
+#FARGOX_container{
+    border: 2px solid chartreuse;
+}
+#author{
+    border: 2px solid salmon;
+    width: 200px;
+    padding: var(--general-padding);
+
+}
+#social{
+    border: 2px solid green;
+    width: 200px;
     padding: var(--general-padding);
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
@@ -1936,3 +1953,39 @@ th{
     fill: var(--color-base-icon-stroke);
 }
 /*__________________________________________________________________________________________*/
+
+
+
+
+
+
+
+
+/* Basic styling for social icons */
+.social-icons {
+    display: flex; /* Align icons horizontally */
+    gap: 15px; /* Space between icons */
+    justify-content: center; /* Center them */
+    margin: 20px 0; /* Add some vertical spacing */
+}
+
+.social-icons a {
+    color: #333; /* Default icon color */
+    font-size: 48px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.social-icons a:hover {
+    color: #25D366; /* WhatsApp green on hover, or customize per icon */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Specific styles for each icon (optional) */
+.social-icons .ri-whatsapp-line {
+    color: #25D366; /* WhatsApp green */
+}
+
+.social-icons .ri-google-line {
+    color: #DB4437; /* Google red */
+}
