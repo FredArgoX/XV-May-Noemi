@@ -1019,7 +1019,8 @@ svg{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: var(--general-gap);
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
@@ -1033,6 +1034,8 @@ svg{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     */
     padding: var(--general-padding);
+    padding-inline-start: calc(2 * var(--general-padding));
+    padding-inline-end: calc(2 * var(--general-padding));
 }
 
 #place_time_container{
@@ -1044,15 +1047,13 @@ svg{
 }
 #map_container{
     height: 300px;
-    width: calc(100% - 2 * (var(--general-margin)));
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 2px solid var(--color-base-icon-pink01);
     border-radius: var(--general-border-radius);
-    margin-block-start: var(--general-gap);
-    margin-block-end: var(--general-gap);
 }
 #map_button{
     display: flex;
