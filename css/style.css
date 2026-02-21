@@ -1034,6 +1034,7 @@ svg{
     */
     padding: var(--general-padding);
 }
+
 #place_time_container{
     display: flex;
     flex-direction: column;
@@ -1042,8 +1043,8 @@ svg{
     gap: var(--general-gap);
 }
 #map_container{
-    height: 400px;
-    width: 300px;
+    height: 300px;
+    width: calc(100% - 2 * (var(--general-margin)));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1402,12 +1403,20 @@ th:nth-child(1){
         rgba(255, 255, 255, 0.1)
     );
 }
+
+
+/*
+* {
+    border: 1px solid gray;
+}
+*/
 #s07x{
     /*border: 2px solid chocolate;*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: var(--general-gap);
     /*border-radius: var(--general-border-radius);*/
     height: 100%;
     width: 100%;
@@ -1421,6 +1430,8 @@ th:nth-child(1){
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     */
     padding: var(--general-padding);
+    padding-inline-start: calc(3 * var(--general-margin));
+    padding-inline-end: calc(3 * var(--general-margin));
 }
 .title_rsvp{
     font-family: "Betania Patmos", cursive;
@@ -1467,7 +1478,13 @@ th:nth-child(1){
     padding-block-end: calc(var(--general-padding)/2);
     border-radius: var(--general-border-radius);
     border: none;
-    background: var(--color-base-icon-pink02);
+    /*background: var(--color-base-icon-pink02);*/
+    /*
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(16px);
+    */
+    background: rgba(231, 223, 212, 0.0);
+    border: 1px solid var(--color-base-pink01);
 }
 .submit_btn{
     display: flex;
