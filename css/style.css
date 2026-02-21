@@ -401,6 +401,12 @@ svg{
     border-bottom-right-radius: 100% 50%;
 
     /*border: 2px solid crimson;*/
+
+    background: radial-gradient(
+        rgba(255, 154, 213, 0.3),
+        rgba(255, 110, 199, 0.4),
+        rgba(255, 79, 163, 0.8)
+    );
 }
 #XV_container{
     padding: var(--general-padding);
@@ -410,10 +416,9 @@ svg{
     border-top-left-radius: 100% 50%;
     border-bottom-right-radius: 100% 50%;
     background: rgba(231, 223, 212, 0.12);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(0px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
-
 .box::before
 {
     border-radius: var(--general-border-radius);
