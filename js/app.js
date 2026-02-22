@@ -109,6 +109,15 @@ setInterval(updateCountdown, 1000);
 // //////////////////////////////////////////////////////////////////////////////////////////
 // Google Map
 function initMap() {
+
+    const markers = [
+        {
+            locationName: 'Verde Olista',
+            lat: 21.766926721609785, 
+            lng: -102.36498752759958,
+            address: 'AGS 94,<br>20341 <br>El Salto de los Salado, <br>Ags.'
+        }
+    ];
     
     const centerMap = {lat:21.7636349, lng:-102.3654991}
 
@@ -118,5 +127,13 @@ function initMap() {
         disableDefaultUI: true
     }
 
-    const map = new google.maps.Map(document.getElementById('google-map'), mapOptions)
+    const map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+
+    // Show markers
+    for(let i=0; i<markers.length; i++) {
+        const marker = new google.maps.Marker({
+            position: { lat: markers[i]['lat'], lng: markers[i]['lng'] },
+            map: map
+        });
+    }
 }
