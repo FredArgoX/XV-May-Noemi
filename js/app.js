@@ -103,7 +103,20 @@ function updateCountdown() {
         document.querySelector('.seconds').textContent = String(seconds).padStart(2, '0');
     }
 }
-
 // Update immediately and then every second
 updateCountdown();
 setInterval(updateCountdown, 1000);
+// //////////////////////////////////////////////////////////////////////////////////////////
+// Google Map
+function initMap() {
+    
+    const centerMap = {lat:21.7636349, lng:-102.3654991}
+
+    const mapOptions = {
+        center: centerMap,
+        zoom: 10,
+        disableDefaultUI: true
+    }
+
+    const map = new google.maps.Map(document.getElementById('google-map'), mapOptions)
+}
