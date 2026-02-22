@@ -1095,6 +1095,7 @@ svg{
         hue-rotate(190deg)
         invert(92%)
         */
+        grayscale(40%)
         sepia(5%)
         contrast(105%)
         invert(15%)
