@@ -33,42 +33,8 @@ const container = document.getElementById('itinerario_table_container');
 if (container) {
     observer.observe(container);
 }
-
-
-
-
-
-
-/*
-document.getElementById('reservationForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent default form submission
-    
-    var formData = new FormData(this);
-    fetch(this.action, {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.result === 'success') {
-            alert('Confirmación exitosa!');
-            this.reset(); // Clear the form
-        } else {
-            alert('Error de confirmación. Vuelve a intentar');
-        }
-    })
-    .catch(error => {
-        alert('Error: ' + error);
-    });
-});
-
-*/
-
-
-
-
-
-
+// //////////////////////////////////////////////////////////////////////////////////////////
+// Google Sheets RSVP
 document.getElementById('reservationForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
     
@@ -107,7 +73,37 @@ document.getElementById('reservationForm').addEventListener('submit', function(e
         submitButton.textContent = 'Confirmar'; // Reset text
     });
 });
+// //////////////////////////////////////////////////////////////////////////////////////////
+// Counter until Party time
+// Define the target date: June 6, 2026, 18:30 Mexico City time (CST, UTC-6)
+// Mexico no longer observes DST, so offset is fixed at -06:00
+const targetDate = new Date('2026-06-06T18:30:00-06:00');
 
+function updateCountdown() {
+    const now = new Date();
+    let diff = targetDate - now; // Difference in milliseconds
 
+    if (diff <= 0) {
+        // Event has passed: set all to 00
+        document.querySelector('.days').textContent = '00';
+        document.querySelector('.hours').textContent = '00';
+        document.querySelector('.minutes').textContent = '00';
+        document.querySelector('.seconds').textContent = '00';
+    } else {
+        // Calculate days, hours, minutes, seconds
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
+        // Update the HTML elements with zero-padded values
+        document.querySelector('.days').textContent = String(days).padStart(2, '0');
+        document.querySelector('.hours').textContent = String(hours).padStart(2, '0');
+        document.querySelector('.minutes').textContent = String(minutes).padStart(2, '0');
+        document.querySelector('.seconds').textContent = String(seconds).padStart(2, '0');
+    }
+}
 
+// Update immediately and then every second
+updateCountdown();
+setInterval(updateCountdown, 1000);
