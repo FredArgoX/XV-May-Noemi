@@ -1095,7 +1095,12 @@ svg{
         hue-rotate(190deg)
         invert(92%)
         */
-        opacity(0.9);
+        sepia(5%)
+        contrast(105%)
+        invert(15%)
+        saturate(290%)
+        hue-rotate(290deg)
+        opacity(0.8);
     border-radius: var(--general-border-radius);
 }
 
