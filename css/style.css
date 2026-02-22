@@ -42,6 +42,7 @@ body.loaded {
     --color-base-icon-grey: #202020;
     --color-base-icon-green01: #849D87;
     --color-base-grey01: #191919;
+    --color-font-01: #333333;
     /*Spacing*/
     --general-gap: 15px;
     --general-margin: 15px;
@@ -59,7 +60,7 @@ body.loaded {
     font-optical-sizing: auto;
     font-weight: 600; /* [300,700] */
     font-style: normal;
-    color: var(--color-base-grey01);
+    color: var(--color-font-01);
     font-size: 1.6rem;
 }
 html{
@@ -1506,6 +1507,110 @@ th{
     font-style: normal;
     font-size: calc(1.6rem * 1.5);
 }
+
+
+
+
+
+
+
+
+/* General form styling */
+#reservationForm {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: var(--general-padding);
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(16px);
+    
+    border-radius: var(--general-border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+#reservationForm label {
+    display: block;
+    margin-bottom: var(--general-margin);
+    font-weight: bold;
+    color: #333333;
+    width: 100%;
+    text-align: justify;
+}
+
+/* Input fields styling */
+#reservationForm input[type="text"],
+#reservationForm input[type="tel"],
+#reservationForm input[type="number"] {
+    background: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: var(--general-margin);
+    border: 2px solid var(--color-base-icon-pink01);
+    border-radius: var(--general-border-radius);
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    transition: border-color 0.4s ease;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3" fill="rgb(236,40,97)"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px;
+}
+
+#reservationForm input[type="text"]:focus,
+#reservationForm input[type="tel"]:focus,
+#reservationForm input[type="number"]:focus {
+    border-color: #C4AA84;
+    outline: none;
+}
+
+/* Submit button styling */
+#reservationForm button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-base-icon-pink01);
+    color: var(--color-base-pink05);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reservationForm button[type="submit"]:hover {
+    background-color: #007bff;
+}
+#reservationForm button[type="submit"].submitted{
+    background-color: var(--color-a);   
+    opacity: 1.0;
+}
+
+/* Required fields indicator */
+/*
+#reservationForm input:required {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3" fill="red"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px;
+}
+*/
+/* Error state for invalid inputs */
+#reservationForm input:invalid {
+    border-color: rgb(0, 123, 255);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3" fill="rgb(0,123,255)"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px;
+}
+
+
+
+
+
+
+
+
+
+
 .rsvp_form_container{
     padding: var(--general-padding);
 }
@@ -1559,6 +1664,25 @@ th{
     border: none;
     margin-block-start: calc(var(--general-margin)*1.5);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 *{
     border: 1px solid crimson;

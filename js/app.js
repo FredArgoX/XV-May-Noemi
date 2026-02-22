@@ -39,6 +39,75 @@ if (container) {
 
 
 
+/*
+document.getElementById('reservationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    var formData = new FormData(this);
+    fetch(this.action, {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.result === 'success') {
+            alert('Confirmación exitosa!');
+            this.reset(); // Clear the form
+        } else {
+            alert('Error de confirmación. Vuelve a intentar');
+        }
+    })
+    .catch(error => {
+        alert('Error: ' + error);
+    });
+});
+
+*/
+
+
+
+
+
+
+document.getElementById('reservationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    var form = this;
+    var submitButton = form.querySelector('button[type="submit"]');
+    
+    // Optional: Disable button immediately on click to prevent multiple submits
+    submitButton.disabled = true;
+    submitButton.textContent = 'Confirmando...'; // Temporary text during submission
+    
+    var formData = new FormData(form);
+    fetch(form.action, {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.result === 'success') {
+            alert('Confirmación exitosa!');
+            
+            // Apply persistent changes after success
+            submitButton.classList.add('submitted'); // Add the CSS class
+            submitButton.textContent = 'Confirmado'; // Change text
+            submitButton.disabled = true; // Keep disabled
+            
+            form.reset(); // Clear the form
+        } else {
+            alert('Error de confirmación.');
+            submitButton.disabled = false; // Re-enable on error
+            submitButton.textContent = 'Confirmar'; // Reset text
+        }
+    })
+    .catch(error => {
+        alert('Error: ' + error);
+        submitButton.disabled = false; // Re-enable on error
+        submitButton.textContent = 'Confirmar'; // Reset text
+    });
+});
+
 
 
 
