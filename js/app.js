@@ -107,7 +107,8 @@ function updateCountdown() {
 updateCountdown();
 setInterval(updateCountdown, 1000);
 // //////////////////////////////////////////////////////////////////////////////////////////
-// Google Map
+// Google Map [FAILED ATTEMPT]
+/*
 function initMap() {
 
     const markers = [
@@ -137,3 +138,4 @@ function initMap() {
         });
     }
 }
+*/

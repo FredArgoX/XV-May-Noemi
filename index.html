@@ -295,7 +295,21 @@
                         </div>
                         <!--__________________________________________________________________________________________-->
                         <div id="map_container">
-                            <div id="google-map"></div>
+                            <div id="google-map">
+                                <!-- Wrapper for perfect responsiveness + styling -->
+                                <div class="map-wrapper">
+                                    <iframe 
+                                        id="mapx"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7410.834745787084!2d-102.3692823176489!3d21.7641019172193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429950e492614ff%3A0x27b24f48e4e261ed!2sVerde%20Olista!5e0!3m2!1sen!2smx!4v1771749289028!5m2!1sen!2smx"
+                                        width="100%" 
+                                        height="100%" 
+                                        style="border:0; display:block;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
                         </div>
                         <!--__________________________________________________________________________________________-->
                         <div id="map_button">
@@ -763,7 +777,7 @@
             swiper.emit('slideChange');
         </script>
         <!-- Google Map -->
-         <script defer src="https:maps.googleapis.com/maps/api/js?key=AIzaSyCzUBO91K4vyjNgcNl1FfcURiaj8qqJrYg&callback=initMap"></script>
+
         <!-- External functionality -->
         <script src="./js/app.js"></script>
     </body>
