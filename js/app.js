@@ -144,7 +144,12 @@ function initMap() {
 const authorBtn = document.querySelector(".author");
 const whatsappBtn = document.querySelector(".whatsapp");
 const gmailBtn = document.querySelector(".gmail");
+const mapBtn = document.querySelector("#map_button");
 
 whatsappBtn.addEventListener("click", () => {
     window.open("https://wa.me/527621160194?text=Hola!%21%20Me%20interesa%20%20tu%20servicio%20de%20desarrollo%20web", "_blank");
+});
+
+mapBtn.addEventListener("click", () => {
+    window.open("https://www.google.com/maps?ll=21.763614,-102.365326&z=15&t=m&hl=en&gl=MX&mapclient=embed&cid=2860435887829967341", "_blank");
 });
