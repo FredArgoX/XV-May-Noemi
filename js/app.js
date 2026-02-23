@@ -140,34 +140,44 @@ function initMap() {
 }
 */
 // //////////////////////////////////////////////////////////////////////////////////////////
-// Calendar reminders
+// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const reminderContainer = document.getElementById('reminder_container');
     reminderContainer.addEventListener('click', saveReminders);
 });
 
 function saveReminders() {
-    // Define the iCalendar content with two events
-    const icsContent = `
-        BEGIN:VCALENDAR
-        VERSION:2.0
-        PRODID:-//xAI//Grok Reminder//EN
-        BEGIN:VEVENT
-        UID:reminder1-${Date.now()}@example.com
-        DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z
-        DTSTART;VALUE=DATE:20260601
-        SUMMARY:Recodatiorio XV Noemi & May
-        DESCRIPTION:Recuerda la fiesta el 06 de Junio!
-        END:VEVENT
-        BEGIN:VEVENT
-        UID:reminder2-${Date.now()}@example.com
-        DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z
-        DTSTART:20260606T180000
-        SUMMARY:XV Noemi & May!
-        DESCRIPTION:Ya casi inician los XV – A las 18:30!
-        END:VEVENT
-        END:VCALENDAR
-    `.trim();
+    // Define the iCalendar content with two events, proper time zones, DTEND, and CRLF line endings
+    const icsContent = `BEGIN:VCALENDAR\r\n` +
+        `VERSION:2.0\r\n` +
+        `PRODID:-//xAI//Grok Reminder//EN\r\n` +
+        `BEGIN:VTIMEZONE\r\n` +
+        `TZID:America/Mexico_City\r\n` +
+        `X-WR-TIMEZONE:America/Mexico_City\r\n` +
+        `BEGIN:STANDARD\r\n` +
+        `DTSTART:20221030T020000\r\n` +
+        `TZOFFSETFROM:-0500\r\n` +
+        `TZOFFSETTO:-0600\r\n` +
+        `TZNAME:CST\r\n` +
+        `END:STANDARD\r\n` +
+        `END:VTIMEZONE\r\n` +
+        `BEGIN:VEVENT\r\n` +
+        `UID:reminder1-${Date.now()}@example.com\r\n` +
+        `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z\r\n` +
+        `DTSTART;VALUE=DATE:20260601\r\n` +
+        `DTEND;VALUE=DATE:20260602\r\n` +
+        `SUMMARY:Remember the party on June 06 2026\r\n` +
+        `DESCRIPTION:Don't forget the party coming up on June 06!\r\n` +
+        `END:VEVENT\r\n` +
+        `BEGIN:VEVENT\r\n` +
+        `UID:reminder2-${Date.now()}@example.com\r\n` +
+        `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z\r\n` +
+        `DTSTART;TZID=America/Mexico_City:20260606T180000\r\n` +
+        `DTEND;TZID=America/Mexico_City:20260606T180000\r\n` +
+        `SUMMARY:Remember that the party starts in 1/2 an hour\r\n` +
+        `DESCRIPTION:Party time is approaching – starts at 18:30!\r\n` +
+        `END:VEVENT\r\n` +
+        `END:VCALENDAR\r\n`;
 
     // Create a Blob from the ICS content
     const blob = new Blob([icsContent], { type: 'text/calendar' });
