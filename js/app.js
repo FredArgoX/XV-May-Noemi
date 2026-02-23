@@ -166,16 +166,16 @@ function saveReminders() {
         `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z\r\n` +
         `DTSTART;VALUE=DATE:20260601\r\n` +
         `DTEND;VALUE=DATE:20260602\r\n` +
-        `SUMMARY:Remember the party on June 06 2026\r\n` +
-        `DESCRIPTION:Don't forget the party coming up on June 06!\r\n` +
+        `SUMMARY:Recuerda los XV Noemi & May el 6 de Junio\r\n` +
+        `DESCRIPTION:El 6 de Junio se celebran los XV de Noemi & May!\r\n` +
         `END:VEVENT\r\n` +
         `BEGIN:VEVENT\r\n` +
         `UID:reminder2-${Date.now()}@example.com\r\n` +
         `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z\r\n` +
         `DTSTART;TZID=America/Mexico_City:20260606T180000\r\n` +
         `DTEND;TZID=America/Mexico_City:20260606T180000\r\n` +
-        `SUMMARY:Remember that the party starts in 1/2 an hour\r\n` +
-        `DESCRIPTION:Party time is approaching – starts at 18:30!\r\n` +
+        `SUMMARY:XV Noemi & May son en 1/2 hora\r\n` +
+        `DESCRIPTION:Ya casi es hora de la fiesta – inicia a las 18:30!\r\n` +
         `END:VEVENT\r\n` +
         `END:VCALENDAR\r\n`;
 
@@ -186,7 +186,7 @@ function saveReminders() {
     // Create a temporary link to trigger download
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'party-reminders.ics';
+    link.download = 'recordatorio_XV_Noemi_May.ics';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
