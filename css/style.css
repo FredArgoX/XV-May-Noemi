@@ -979,9 +979,9 @@ svg{
     */
     background: rgba(231, 223, 212, 0.12);
     backdrop-filter: blur(16px);
-    /*
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    */
+    
+    
+    
     padding: var(--general-padding);
 }
 
@@ -991,9 +991,11 @@ svg{
     width: calc(100% - (2* (var(--general-margin))));
     max-height: 70%;
     border-radius: var(--general-border-radius);
+    
 }
 .ph{
     border-radius: var(--general-border-radius);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 
