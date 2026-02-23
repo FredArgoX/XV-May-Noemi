@@ -987,19 +987,11 @@ svg{
 
 
 
-*{
-    border: 1px solid black;
-}
-
 .imc{
     width: calc(100% - (2* (var(--general-margin))));
     height: auto;
 }
 
-.ph{
-    
-    border: 2px solid chartreuse;
-}
 
 
 #date_container{
@@ -1084,6 +1076,23 @@ svg{
 }
 .dright{
     width: 200px;
+}
+
+
+.itop{
+    position: relative;
+    position: fixed;
+    top: calc(2 * var(--general-margin));
+    left: calc((100% - 280px) / 2);
+    width: 280px;
+}
+.ibottom{
+    position: relative;
+    position: fixed;
+    bottom: calc(2 * var(--general-margin));
+    width: 280px;
+    transform: rotate(180deg);
+    left: calc((100% - 280px) / 2);
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////// */
