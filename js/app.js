@@ -140,6 +140,52 @@ function initMap() {
 }
 */
 // //////////////////////////////////////////////////////////////////////////////////////////
+// Calendar reminders
+document.addEventListener('DOMContentLoaded', () => {
+    const reminderContainer = document.getElementById('reminder_container');
+    reminderContainer.addEventListener('click', saveReminders);
+});
+
+function saveReminders() {
+    // Define the iCalendar content with two events
+    const icsContent = `
+        BEGIN:VCALENDAR
+        VERSION:2.0
+        PRODID:-//xAI//Grok Reminder//EN
+        BEGIN:VEVENT
+        UID:reminder1-${Date.now()}@example.com
+        DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z
+        DTSTART;VALUE=DATE:20260601
+        SUMMARY:Recodatiorio XV Noemi & May
+        DESCRIPTION:Recuerda la fiesta el 06 de Junio!
+        END:VEVENT
+        BEGIN:VEVENT
+        UID:reminder2-${Date.now()}@example.com
+        DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z
+        DTSTART:20260606T180000
+        SUMMARY:XV Noemi & May!
+        DESCRIPTION:Ya casi inician los XV – A las 18:30!
+        END:VEVENT
+        END:VCALENDAR
+    `.trim();
+
+    // Create a Blob from the ICS content
+    const blob = new Blob([icsContent], { type: 'text/calendar' });
+    const url = URL.createObjectURL(blob);
+
+    // Create a temporary link to trigger download
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'party-reminders.ics';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Clean up
+    URL.revokeObjectURL(url);
+}
+
+// //////////////////////////////////////////////////////////////////////////////////////////
 // Social Icons
 const authorBtn = document.querySelector(".author");
 const whatsappBtn = document.querySelector(".whatsapp");
