@@ -358,6 +358,7 @@ body {
     max-height: 200px;
     height: min-content;
     bottom: 5px !important;
+    width: min-content;
 }
 /*
 *{
@@ -987,16 +988,31 @@ svg{
 
 
 
+.mySwiper2{
+    /*background-color: #007bff;*/
+    /*margin: var(--general-margin);*/
+    width: calc(100% - (2 * var(--general-margin)));
+    height: 60vh;
+}
+
+
+
 .imc{
-    width: calc(100% - (2* (var(--general-margin))));
-    max-height: 70%;
-    border-radius: var(--general-border-radius);
+    /*width: calc(100% - (2* (var(--general-margin))));*/
+    /*border-radius: var(--general-border-radius);*/
+    /*background-color: crimson;*/
+    width: 100%;
+    margin: 0;
     
 }
 .ph{
+    /*border-radius: var(--general-border-radius);*/
     border-radius: var(--general-border-radius);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
+
+
+
 
 
 
