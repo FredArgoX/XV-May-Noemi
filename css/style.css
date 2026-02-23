@@ -991,8 +991,11 @@ svg{
 .mySwiper2{
     /*background-color: #007bff;*/
     /*margin: var(--general-margin);*/
-    width: calc(100% - (2 * var(--general-margin)));
+    /*width: calc(100% - (2 * var(--general-margin)));*/
+    width: 100%;
+    /*padding: calc(2 *var(--general-padding));*/
     height: 60vh;
+    background: none;
 }
 
 
@@ -1001,7 +1004,7 @@ svg{
     /*width: calc(100% - (2* (var(--general-margin))));*/
     /*border-radius: var(--general-border-radius);*/
     /*background-color: crimson;*/
-    width: 100%;
+    width: calc(100% - 2 * (var(--general-margin)));
     margin: 0;
     
 }
