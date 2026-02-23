@@ -990,6 +990,10 @@ svg{
 .imc{
     width: calc(100% - (2* (var(--general-margin))));
     height: auto;
+    border-radius: var(--general-border-radius);
+}
+.ph{
+    border-radius: var(--general-border-radius);
 }
 
 
