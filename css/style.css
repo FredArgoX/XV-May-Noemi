@@ -333,6 +333,39 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     */
 }
+
+.swiper-pagination-2{
+    /*background-color: #ec2861;*/
+    /*
+    left: 0.35rem !important;
+    width: min-content;
+    */
+    /*background: #063499;*/
+    /*width: var(--general-margin);*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px !important;
+    /*left: 1rem !important;*/
+    /*height: 200px;*/
+    border-radius: var(--general-border-radius);
+    /*
+    background: rgba(231, 223, 212, 0.12);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    */
+    max-height: 200px;
+    height: min-content;
+    bottom: 5px !important;
+}
+/*
+*{
+    border: 1px solid crimson;
+}
+*/
+
+
 /* EVERY bullet (base styles) */
 .swiper-pagination-bullet {
     background: #eb7a7a !important;
@@ -1951,8 +1984,8 @@ th{
 }
 */
 .FARGOX {
-    width: 200px; /* Adjust size as needed */
-    height: 200px;
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
 }
 
 /* Set variables and initial dash properties for strokes */

@@ -139,3 +139,15 @@ function initMap() {
     }
 }
 */
+// //////////////////////////////////////////////////////////////////////////////////////////
+// Social Icons
+const authorBtn = document.querySelector(".author");
+const whatsappBtn = document.querySelector(".whatsapp");
+const gmailBtn = document.querySelector(".gmail");
+
+authorBtn.addEventListener("click", () => {
+    window.open("https://github.com/FredArgoX", "_blank");
+});
+githubBtn.addEventListener("click", () => {
+    window.open("https://github.com/FredArgoX", "_blank");
+});
