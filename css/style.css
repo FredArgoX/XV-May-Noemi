@@ -462,7 +462,24 @@ svg{
     backdrop-filter: blur(0px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     */
+    /*
+    background-color: #007bff;
+    */
 }
+
+.moon1{
+    width: 25px;
+    position: fixed;
+    bottom: calc(4 * var(--general-margin));
+    left: calc((100vw - 25px) / 2);
+    bottom: 25vh;
+}
+
+
+
+
+
+
 /*
 *{
     border: 1px solid gray;
@@ -475,7 +492,7 @@ svg{
     border-bottom-right-radius: 100% 50%;
     content: "";
     position: absolute;
-    inset: calc(5 * var(--general-margin));
+    inset: calc(3 * var(--general-margin));
     padding: 6px;
     background: radial-gradient(
         circle at center,
@@ -809,25 +826,33 @@ svg{
 }
 
 #XV{
-    width: 15rem;
+    width: 100%;
 }
 /*V*/
 .xv01{
-    fill: #ec2861;
+    fill: #C01E25;
+    /*
+    stroke: #333333;
+    stroke-width: 2;
+    */
 }
 /*X*/
 .xv02{
-    fill: #2F2F49;
+    fill: #C4AA84;
+    /*
+    stroke: #333333;
+    stroke-width: 2;
+    */
 }
 .xv03, .xv04, .xv05, .xv06, .xv07{
-    fill: #ec2861;
-    stroke-width: 5;
-    stroke: #ec2861;
+    fill: #C01E25;
+    stroke-width: 15;
+    stroke: #C01E25;
 }
 .xv08, .xv09, .xv10{
-    fill: #2F2F49;
-    stroke-width: 5;
-    stroke: #2F2F49;
+    fill: #C4AA84;
+    stroke-width: 15;
+    stroke: #C4AA84;
 }
 
 #stain_container{
