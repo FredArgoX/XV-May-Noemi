@@ -1027,10 +1027,15 @@ svg{
     background: var(--color-base-icon-pink01);
     border-radius: var(--general-border-radius);
     /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.66);*/
+    cursor: pointer;
 }
 #reminder_container p{
     color: var(--color-base-icon-cream);
 }
+#reminder_container:hover {
+    background-color: #007bff;
+}
+
 .day,
 .dayn,
 .month,
@@ -1246,10 +1251,21 @@ svg{
     background: var(--color-base-icon-pink01);
     border-radius: var(--general-border-radius);
     /*box-shadow: 0 8px 32px rgba(0, 0, 0, 0.66);*/
+    cursor: pointer;
 }
 #map_button p{
     color: var(--color-base-icon-cream);
 }
+#map_button:hover {
+    background-color: #007bff;
+}
+
+
+
+
+
+
+
 .place,
 .time{
     font-family: "Betania Patmos", cursive;
