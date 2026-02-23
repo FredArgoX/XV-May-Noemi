@@ -453,8 +453,8 @@ svg{
 #XV_container{
     padding: var(--general-padding);
     border-radius: var(--general-border-radius);
-    width: 70%;
-    height: 70%;
+    width: 60%;
+    height: 60%;
     border-top-left-radius: 100% 50%;
     border-bottom-right-radius: 100% 50%;
     /*
@@ -470,11 +470,24 @@ svg{
 .moon1{
     width: 25px;
     position: fixed;
-    bottom: calc(4 * var(--general-margin));
+    /*
     left: calc((100vw - 25px) / 2);
     bottom: 25vh;
+    */
+    bottom: calc(4 * var(--general-margin));
+    left: calc(4 * var(--general-margin));
 }
-
+.moon2{
+    width: 25px;
+    position: fixed;
+    /*
+    left: calc((100vw - 25px) / 2);
+    bottom: 25vh;
+    */
+    top: calc(4 * var(--general-margin));
+    right: calc(4 * var(--general-margin));
+    transform: rotate(180deg);
+}
 
 
 
@@ -557,7 +570,7 @@ svg{
     inset-block-start: -6px;
     inset-block-end: -6px;
     */
-    border: 2px solid crimson;
+    /*border: 2px solid crimson;*/
     content: "";
     position: absolute;
     padding: 6px;
