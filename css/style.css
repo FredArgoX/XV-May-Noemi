@@ -989,7 +989,7 @@ svg{
 
 .imc{
     width: calc(100% - (2* (var(--general-margin))));
-    height: auto;
+    max-height: 70%;
     border-radius: var(--general-border-radius);
 }
 .ph{
